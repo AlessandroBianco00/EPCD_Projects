@@ -12,7 +12,7 @@ REGOLE
 */
 
 /*RISPOSTA 1
-I dati JS si dividono in 2 tipi: dati semplici e complessi. I dati semplici sono di 5 tipi, mentre siste solo un dato complesso: gli Oggetti.
+I dati JS si dividono in 2 tipi: dati primitivi e complessi. I dati semplici sono di 5 tipi, mentre siste solo un dato complesso: gli Oggetti.
 Il primo dato semplice sono le stringhe, sono racchiuse da apici (semplici o doppi) e contengono caratteri. Vengono generalmente utilizzati per contenere dei testi.
 I secondi sono dati numerici, sono appunto numeri (di vario tipo: intero, negativo, ...). Permettono di effettuare le varie operazioni numeriche.
 Il terzo tipo sono dati booleani, possono essere true o false (vero o falso), sono generalmente utilizzati nella logica condizionale (codici if-else, cicli while e for)
@@ -34,6 +34,11 @@ var myName = 'Alessandro';
 
 /*RISPOSTA 3*/
 console.log(12+20);
+
+/*creo una funzione
+let a=12, b=20;
+let somma a + b;
+console.log(somma);
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
@@ -72,5 +77,5 @@ console.log(4-x);
 let name1 = 'john';
 let name2 = 'John';
 console.log(name1==name2);
-console.log(name1.toLowerCase==name2.toLowerCase);
+console.log(name1.toLowerCase()==name2.toLowerCase());
 console.log(name2); /*verifica name2 = John*/
