@@ -4,6 +4,13 @@ body{
     font-family: "EB Garamond", serif;
 }
 
+/***********header**********/
+
+header{
+    text-align: center;
+    margin: 0;
+}
+
 .h-content{
     margin: 0 auto;
     display: flex;
@@ -16,6 +23,8 @@ header h6{
     color: darkcyan;
     background-color: #ffdcca;
 }
+
+/***********main**********/
 
 main, footer{
     margin: 0 30vw;
@@ -34,6 +43,8 @@ main img{
     text-align: center;
 }
 
+/***********nav**********/
+
 nav{
     padding-left: 1vw;
     border-left: 1px solid darkorange;
@@ -43,6 +54,8 @@ nav h5{
     color: brown;
     margin-bottom: 0;
 }
+
+/*********div liste*********/
 
 .ingredienti li{
     padding-bottom: 0.2em;

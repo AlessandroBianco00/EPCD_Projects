@@ -12,7 +12,7 @@ REGOLE
 */
 
 /*RISPOSTA 1
-I dati JS si dicidono in 2 tipi: dati semplici e complessi. I dati semplici sono di 5 tipi, mentre siste solo un dato complesso: gli Oggetti.
+I dati JS si dividono in 2 tipi: dati semplici e complessi. I dati semplici sono di 5 tipi, mentre siste solo un dato complesso: gli Oggetti.
 Il primo dato semplice sono le stringhe, sono racchiuse da apici (semplici o doppi) e contengono caratteri. Vengono generalmente utilizzati per contenere dei testi.
 I secondi sono dati numerici, sono appunto numeri (di vario tipo: intero, negativo, ...). Permettono di effettuare le varie operazioni numeriche.
 Il terzo tipo sono dati booleani, possono essere true o false (vero o falso), sono generalmente utilizzati nella logica condizionale (codici if-else, cicli while e for)

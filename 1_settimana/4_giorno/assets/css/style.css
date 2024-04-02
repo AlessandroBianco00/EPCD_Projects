@@ -3,7 +3,7 @@
 
 body {
     background-image: url(../img/sfondo.png);
-    font-family: "Poppins";
+    font-family: "Poppins", monospace;
 }
 
 /* HEADER */
@@ -45,7 +45,7 @@ h4 {
 
 .sezioni {
     background-color: #d7d7d7;
-    border: solid gray 0.2px;
+    border: solid gray 1px;
     border-radius: 5px;
 }
 
@@ -53,6 +53,8 @@ h4 {
     text-decoration: none;
     color: purple;
 }
+
+/*LISTE*/
 
 ul, ol {
     margin-left: 3em;
@@ -86,12 +88,18 @@ table{
     background-color: #2459f9;
 }
 
+th {
+    border-right: 1px solid white;
+}
+
 td, th {
     padding: 0.5em;
 }
 
 .righe-grigie {
     background-color: #d7d7d7;
+    border-top: solid 1px darkgray;
+    border-bottom: solid 1px darkgray;
 }
 
 /* Video*/
@@ -103,6 +111,11 @@ caption {
 .video-cont {
     text-align: center;
     border-radius: 25px;
+    margin: 0 auto;
+}
+
+iframe {
+    border-radius:  25px;
 }
 
 /* FORM */
