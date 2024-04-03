@@ -34,11 +34,11 @@ if (c != 5) {
 /*RISPOSTA 3*/
 
 let d = 24;
-if (d%5 == 0) {
+if (d%5 === 0) {
   console.log('d è un multiplo di 5');
-} else {
+} /*else {
   console.log('d non è un multiplo di 5');
-}
+}*/
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
@@ -47,16 +47,20 @@ if (d%5 == 0) {
 /*RISPOSTA 4*/
 let e = 5;
 let f = 3;
-if (e == 8) {
+if (e === 8) {
   console.log('e è uguale a 8');
-} else if (f == 8) {
+} else if (f === 8) {
   console.log('f è uguale a 8');
-} else if (e + f == 8) {
+} else if (e + f === 8) {
   console.log('la somma di e ed f è uguale a 8');
-} else if (e - f == 8 || f - e == 8) {
+} else if (e - f === 8 || f - e === 8) {
   console.log('la differenza di e ed f è uguale a 8');
 } else {
   console.log('nessuna delle condizioni è verificata');
+}
+
+if (e === 8 || f === 8 || e + f === 8 || e - f === 8 || f - e === 8) {
+  console.log('verificato');
 }
 
 /* ESERCIZIO 5
@@ -67,12 +71,13 @@ if (e == 8) {
 
 /*RISPOSTA 5*/
 let totalShoppingCart = 51;
+let speseSpedizione = 10;
 let spesaCarrello;
 if (totalShoppingCart > 50) {
   spesaCarrello = totalShoppingCart;
   console.log(spesaCarrello);
 } else {
-  spesaCarrello = totalShoppingCart + 10;
+  spesaCarrello = totalShoppingCart + speseSpedizione;
   console.log(spesaCarrello);
 }
 
@@ -92,7 +97,7 @@ if (blackFriday) {
     spesaCarrello1 = totalShoppingCart1;
     console.log(spesaCarrello1);
   } else {
-    spesaCarrello1 = totalShoppingCart1 + 10;
+    spesaCarrello1 = totalShoppingCart1 + speseSpedizione;
     console.log(spesaCarrello1);
   }
 } else {
@@ -100,7 +105,7 @@ if (blackFriday) {
     spesaCarrello1 = totalShoppingCart1;
     console.log(spesaCarrello1);
   } else {
-    spesaCarrello1 = totalShoppingCart1 + 10;
+    spesaCarrello1 = totalShoppingCart1 + speseSpedizione;
     console.log(spesaCarrello1);
   }
 }
@@ -117,21 +122,21 @@ let h = 81;
 let i = 23.5;
 if (g>=h && g>=i) {
   if (h<=i) {
-    console.log('g è maggiore di h e i, mentre i è maggiore di h');
+    console.log(g,i,h);
   } else {
-    console.log('g è maggiore di h e i, mentre h è maggiore di i');
+    console.log(g,h,i);
   }
 } else if (i>=h && g<=i) {
   if (h<=g) {
-    console.log('i è maggiore di h e g, mentre g è maggiore di h');
+    console.log(i,g,h);
   } else {
-    console.log('i è maggiore di h e g, mentre h è maggiore di g');
+    console.log(i,h,g);
   }
 } else {
   if (i<=g) {
-    console.log('h è maggiore di i e g, mentre g è maggiore di i');
+    console.log(h,g,i);
   } else {
-    console.log('h è maggiore di i e g, mentre i è maggiore di g');
+    console.log(h,i,g);
   }
 }
 
@@ -155,9 +160,9 @@ if (typeof j == "number") {
 
 /*RISPOSTA 9*/
 let k = 62;
-if (k%2 == 0) {
+if (k%2 === 0) {
   console.log('k è un numero pari');
-} else if (k%2 == 1) {
+} else if (k%2 === 1) {
   console.log('k è un numero dispari');
 } else {
   console.log('k non è un numero intero o non è proprio un numero');
@@ -239,7 +244,10 @@ console.log(array14);
 
 /*RISPOSTA 15*/
 
+array14[9] = 100;
+/*
 array14.pop();
 array14.push(100);
+*/
 console.log(array14);
 
