@@ -237,6 +237,31 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
 
+/* POP ELIMINA DAL FONDO NON RIESCO A ELIMINARE I NOMI FEMMINILE SENZA RIORDINARE I NOMI
+console.log(charactersNames.length);
+for (let f = 0; f < femaleCharacters.length; f++) {
+  for (let i = charactersNames.length - 1; i >= 0; i--) {
+    if (femaleCharacters[f].name === charactersNames[i]) {
+      charactersNames.pop()
+    }
+  }
+}
+console.log(charactersNames.length);
+*/
+
+/* SOLUZIONE CON SPLICE*/
+console.log(charactersNames.length);
+for (let f = 0; f < femaleCharacters.length; f++){
+  for (let i = charactersNames.length -1; i>=0; i--) { // ANDANDO A RITROSO ANALIZZO TUTTI I charactersNames, SE USASSI I CRESCENTE SPLICE SPOSTA IL SUCCESSIVO ALL'ELEMENTO ELIMNATO NELLA POSIZIONE PRECEDENTE SENZA ANALIZZARLO. L'ERRORE NON SAREBBE COMUNQUE VISUALIZZABILE POICHE' NON CI SONO ELEMENTI DOPPI, NEANCHE NEL CASO AGGIUNGESSI UNA SECONDA VOLTA LEIA (es) AVVEREBBE UN ERRORE POICHE' COMUNQUE AVENDO I NOMI SEGNATI IN femaleCharacters CI SAREBBE UN CONTROLLO ULTERIORE (f = 3).
+    if (femaleCharacters[f].name === charactersNames[i]) {
+      charactersNames.splice(i, 1)
+    }
+  }
+}
+console.log(charactersNames.length);
+console.log(charactersNames);
+
+/* PRIMA SOLUZIONE TROVATA (NON OTTIMALE) ############## nuovaLunghezza === charactersNames.length NON PERMETTE DI PROCEDERE AL FOR, ELIMINANDO UN NOME PER VOLTA
 console.log(charactersNames.length);
 nuovaLunghezza = charactersNames.length;
 for (let f = 0; f < femaleCharacters.length; f++){
@@ -246,8 +271,16 @@ for (let f = 0; f < femaleCharacters.length; f++){
     }
   }
 }
+nuovaLunghezza = charactersNames.length;
+for (let f = 0; f < femaleCharacters.length; f++){
+  for (let i = 0; nuovaLunghezza === charactersNames.length; i++) {
+    if (femaleCharacters[f].name = charactersNames[i]) {
+      charactersNames.pop(i)
+    }
+  }
+}
 console.log(charactersNames.length);
-
+*/
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
