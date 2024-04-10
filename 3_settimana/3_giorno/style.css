@@ -1,0 +1,36 @@
+body {
+    background-color: purple;
+    text-align: center;
+    margin: 20vw 30vw auto;
+}
+
+article {
+    background-color: white;
+    border-radius: 25px;
+    border: solid 5px gray;
+}
+
+#titolo {
+    background-color: blue;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+.classeTask {
+    background-color:#dddada;
+    border: solid 1px #686565;
+    border-radius: 10px;
+    height: 2vw;
+    margin-bottom: 0.2em;
+}
+
+.cestino {
+    float: right;
+}
+
+.sbarrato {
+    text-decoration: line-through;
+}
