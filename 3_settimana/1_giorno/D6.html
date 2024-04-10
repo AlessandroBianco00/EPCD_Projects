@@ -30,13 +30,16 @@
       .myHeading {
         color: #ff00d6;
       }
+
+      .sparisci {
+        display: none;
+      }
     </style>
   </head>
 
   <body>
     <div id="div1">
       <h1 id="titolo1">Questo è il titolo della pagina</h1>
-      <button onclick="makeItClickable">Cancella l'ultima lettera</button>
       <h2 id="changeMyColor">Questo è il sottotitolo della pagina</h2>
     </div>
 
@@ -55,7 +58,7 @@
         <li>3rd</li>
       </ul>
 
-      <a href="https://epicode.com/it/" id="pino">Questo link porta al sito di Epicode</a>
+      <a href="https://epicode.com/it/">Questo link porta al sito di Epicode</a>
 
       <div>
         <p>Questo testo è un placeholder per gli esercizi</p>
@@ -86,7 +89,7 @@
     */
 
       const changeTitle = function () {
-        let intestazione = document.getElementById('titolo1');
+        let intestazione = document.querySelector('h1');
         intestazione.innerHTML = 'Esercizi di DOM Manipulation'
       }
       changeTitle();
@@ -96,7 +99,7 @@
     */
 
       const addClassToTitle = function () {
-        let intestazione = document.getElementById('titolo1');
+        let intestazione = document.querySelector('h1');
         intestazione.classList.add("myHeading");
       }
       addClassToTitle();
@@ -118,12 +121,10 @@
       */
 
       const changeUrls = function () {
-        let gLink = document.querySelectorAll('a[href]');
+        let gLink = document.querySelectorAll('a:not(footer a)');
         gLink.forEach((link) => {
           link.setAttribute("href", "https://www.google.com");
         })
-        /*let gLink = document.getElementById('pino');
-        gLink.setAttribute("href", "https://www.google.com");*/
       }
       changeUrls();
 
@@ -131,23 +132,31 @@
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
 
-      const addToTheSecond = function () {
+      const addToTheSecond = function (contenuto) {
         let quarto = document.createElement("li");
         let lista2 = document.getElementById('secondList');
+        quarto.innerText = contenuto;
         lista2.appendChild(quarto);
       }
-      addToTheSecond();
+      addToTheSecond('Quarto E');
 
       /* ESERCIZIO 6
        Scrivi una funzione che aggiunga un paragrafo al primo div
     */
 
-      const addParagraph = function () {
+      const addParagraph = function (contenuto) {
         let paragrafo = document.createElement("p");
-        let lista2 = document.getElementById('div1');
+        let lista2 = document.querySelectorAll('div')[0];
+        paragrafo.innerHTML = contenuto;
         lista2.appendChild(paragrafo);
       }
-      addParagraph();
+      addParagraph('Scrivo qualcosa');
+
+      /*const addParTemplate = function (contenuto) {
+        let contenitore = document.querySelectorAll('div')[0];
+        contenitore.innerHTML += `<p> ${contenuto} </p>`
+      }
+      addParTemplate('Voglio vedere se funziona con template literals')*/
 
       /* ESERCIZIO 7
        Scrivi una funzione che faccia scomparire la prima lista non ordinata
@@ -175,13 +184,10 @@
       */
 
       const makeItClickable = function () {
-        let titolo1 = document.getElementById('titolo1');
-        let titoloCorto = titolo1.childNodes;
-        let titoloFin = '';
-        for (let i = 0; i < titoloCorto.length - 1; i++) {
-          titoloFin += titoloCorto[i];
+        let titolo1 = document.querySelector('h1');
+        titolo1.onclick = function () {
+          titolo1.classList.toggle('myHeading');
         }
-        document.getElementById('titolo1').replaceChild(titoloFin);
       }
       makeItClickable();
 
@@ -189,51 +195,142 @@
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
 
-      const revealFooterLink = function () {}
+      const revealFooterLink = function () {
+        let piePagina = document.querySelector('footer');
+        piePagina.style.cursor = 'pointer';
+        piePagina.onclick = function () {
+          let linkFooter = document.querySelector('footer a').getAttribute('href');
+          alert(linkFooter);
+        }
+      }
+      revealFooterLink();
 
       /* ESERCIZIO 11
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
        La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
     */
-/*
-      const generateTable = function () {
-        let tabDiv = document.getElementById('tableArea');
-        let tabella = document.createElement('tr');
-        tabDiv.appendChild(tabella);
-        let legenda = document.querySelector('tr')
-        let categorie = document.createElement('th');
-        let categorie0 = document.querySelectorAll('#tableArea th')
-        let arrayTipi = ['immagine', 'nome', 'prodotto', 'quantità', 'prezzo']
-        for (let i = 0; i < arrayTipi.length; i++) {
-          legenda.appendChild(categorie0)
-          categorie0.appendChild(categorie);
-          categorie0[i].innerHTML = arrayTipi[i]
+
+    const generateTable = function () {
+        const container = document.getElementById('tableArea')
+        const table = document.createElement('table')
+        table.style.width = '100%'
+
+        const firstRow = document.createElement('tr')
+
+        const thImage = document.createElement('th')
+        thImage.innerText = 'Immagine'
+        const thProduct = document.createElement('th')
+        thProduct.innerText = 'Prodotto'
+        const thQuantity = document.createElement('th')
+        thQuantity.innerText = 'Quantità'
+        const thPrice = document.createElement('th')
+        thPrice.innerText = 'Prezzo'
+
+        const images = [
+          'https://m.media-amazon.com/images/I/81yJf4K+L1L._AC_SY450_.jpg',
+          'https://m.media-amazon.com/images/I/61MRTh9xotL._AC_SX679_.jpg',
+          'https://www.tradeinn.com/f/13805/138054505/samsung-smartphone-galaxy-s21-5g-8gb-128gb-6.2.jpg',
+          'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1661333885.70133010!500x500.png',
+          'https://tomatosmartphone.it/wp-content/uploads/2022/06/EU-IN_Green.png',
+        ]
+
+        firstRow.appendChild(thImage)
+        firstRow.appendChild(thProduct)
+        firstRow.appendChild(thQuantity)
+        firstRow.appendChild(thPrice)
+        table.appendChild(firstRow)
+
+        for (let i = 0; i < images.length; i++) {
+          const newRow = document.createElement('tr')
+
+          const tdImage = document.createElement('td')
+          tdImage.innerHTML = `<img src=${images[i]} alt="smartphone" height="200" />`
+          const tdProduct = document.createElement('td')
+          tdProduct.innerText = 'Smartphone'
+          const tdQuantity = document.createElement('td')
+          tdQuantity.innerText = Math.floor(Math.random() * 50)
+          const tdPrice = document.createElement('td')
+          tdPrice.innerText = Math.floor(Math.random() * 500) + '€'
+
+          newRow.appendChild(tdImage)
+          newRow.appendChild(tdProduct)
+          newRow.appendChild(tdQuantity)
+          newRow.appendChild(tdPrice)
+          table.appendChild(newRow)
         }
+
+        container.appendChild(table)
       }
-      generateTable();
-*/
+
+      generateTable()
+
       /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
     */
 
-      const addRow = function () {}
+    const addRow = function (imgUrl, productName, quantity, price) {
+        const table = document.querySelector('table')
+
+        const newRow = document.createElement('tr')
+
+        const tdImage = document.createElement('td')
+        tdImage.innerHTML = `<img src=${imgUrl} alt="smartphone" height="200" />`
+        const tdProduct = document.createElement('td')
+        tdProduct.innerText = productName
+        const tdQuantity = document.createElement('td')
+        tdQuantity.innerText = quantity
+        const tdPrice = document.createElement('td')
+        tdPrice.innerText = price + '€'
+
+        newRow.appendChild(tdImage)
+        newRow.appendChild(tdProduct)
+        newRow.appendChild(tdQuantity)
+        newRow.appendChild(tdPrice)
+        table.appendChild(newRow)
+      }
+
+      addRow(
+        'https://data.wikomobile.com/documents/images/IT/dbd2f986d94529fc20c0864e2c5c978c.jpg',
+        'Wiko',
+        10,
+        200
+      )
 
       /* ESERCIZIO 14
       Crea una funzione che nasconda le immagini della tabella quando eseguita
     */
 
-      const hideAllImages = function () {}
+      const hideAllImages = function () {
+        let immagini = document.querySelectorAll('img');
+        for (let i = 0; i < immagini.length; i++) {
+          immagini[i].classList.add('sparisci');
+        }
+      }
+      hideAllImages();
+      /*const hideAllImages = function () {
+        let immagini = document.querySelectorAll('img');
+        for (let i = 0; i < immagini.length; i++) {
+          immagini[i].style.display = 'none'
+        }
+      }
+      hideAllImages();*/
 
       /* EXTRA ESERCIZIO 15
       Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
     */
 
       const changeColorWithRandom = function () {
-        let sottotitolo = document.getElementById('changeMyColor')
-        let arrayColori = [0,0,0]
-        for (let i = 0; i < arrayColori.length; i++) {
-          arrayColori[i]= Math.round(Math.random()*255) }
-      }
+        let sottotitolo = document.getElementById('changeMyColor');
+        sottotitolo.onclick = function () {
+          let red = Math.round(Math.random()*255);
+          let green = Math.round(Math.random()*255);
+          let blue = Math.round(Math.random()*255);
+          let colore = `rgb(${red}, ${green}, ${blue})`;
+          sottotitolo.style.userSelect = 'none' 
+          sottotitolo.style.cursor = 'pointer'
+          sottotitolo.style.color = colore;
+        }  
+        }
       changeColorWithRandom();
     </script>
   </body>
