@@ -20,22 +20,37 @@ creaCaselle(numeroCaselle);
 /*FUNZIONE PER ESTRARRE, RICHIAMATA SUL FONDO*/
 
 const estraiNumero = function () {
+    let risultatoPar = document.getElementById('risultato');
     //let indiceMassimo = arrTombola.length; NON USATO
-    let indiceTombola = Math.ceil(Math.random()*arrTombola.length);
-    let num1 = arrTombola.splice(indiceTombola-1,1);
-    let num = num1[0];
     if (arrTombola.length<1) {
         risultatoPar.innerHTML = 'Hai estratto tutti i numeri';
     } else {
-        risultatoPar = document.getElementById('risultato');
+        let indiceTombola = Math.ceil(Math.random()*arrTombola.length);
+        let num1 = arrTombola.splice(indiceTombola-1,1);
+        let num = num1[0];
+        console.log(num);
         risultatoPar.innerHTML = 'Numero : ' + num;
-        for (let j = 0; j < numeroCaselle; j++ ) {
-            numeroGiusto = document.querySelectorAll('.caselle')[j];
-            if (num === j+1 && !numeroGiusto.classList.contains('estratto')) { 
-                numeroGiusto.classList.add('estratto');
+        /*for (let j = 0; j < numeroCaselle; j++ ) {
+            let numeroCorrente = document.querySelectorAll('.caselle')[j];
+            if (num === j+1) { 
+                numeroCorrente.classList.add('estratto');
+            }
+        }*/
+        let numeroCorrente = document.querySelectorAll('.caselle')[num-1];
+        numeroCorrente.classList.add('estratto');
+
+        let caselleGiocatore = document.getElementsByClassName('caselleMie');
+        console.log(caselleGiocatore.length);
+        for (let k = 0; k < caselleGiocatore.length; k++) {
+            console.log(caselleGiocatore[k].innerHTML)
+            if (num == caselleGiocatore[k].innerHTML) {
+                /*let casellaEstratta = document.querySelectorAll('.caselleMie')[k];*/
+                console.log('il valore '+ num + 'è nella casella' + k)
+                caselleGiocatore[k].classList.add('estratto');
             }
         }
     }
+    
 }
 
 /*GENERO ARRAY PADRE PER LE CARTELLE*/
@@ -51,7 +66,7 @@ const generaCartella = function () {
     cartella.classList.add('cartelle');
     let arrayCartella = arrayRiferimento;
     for (let i = 0; i < caselleCartella; i++) {
-        let indiceTombola = Math.ceil(Math.random()*arrayCartella.length);
+        let indiceTombola = Math.ceil(Math.random()*arrayRiferimento.length);
         let num3 = arrayCartella.splice(indiceTombola-1, 1);
         let num2 = num3[0];
         let miaCasella = document.createElement('div')
@@ -63,6 +78,8 @@ const generaCartella = function () {
 }
 
 /* CONTINUARE CON VERIFICA CARTELLE*/
+
+
 
 let bottoneNumero = document.getElementById('estrazione');
 bottoneNumero.addEventListener('click', estraiNumero);

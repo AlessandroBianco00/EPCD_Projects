@@ -26,6 +26,10 @@ body {
     font-weight: bold;
 }
 
+#dammeUna {
+    margin-bottom: 3vw;
+}
+
 .cartelle {
     width: 30%;
     margin: auto;
