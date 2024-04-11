@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10vw;
+}
+
+#tabellone {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 3vw;
+}
+
+.caselle {
+    display: inline-block;
+    border: solid 1px black;
+    width: 45px;
+    height: 45px;
+    vertical-align: bottom;
+}
+
+.estratto {
+    background-color: lightgray;
+}
+
+#risultato {
+    font-weight: bold;
+}
+
+.cartelle {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 3vw;
+}
+
+.caselleMie {
+    display: inline-block;
+    border: solid 1px black;
+    width: 45px;
+    height: 45px;
+    vertical-align: bottom;
+}
