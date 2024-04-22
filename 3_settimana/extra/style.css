@@ -16,6 +16,8 @@ main {
     height: 5vw;
     border-radius: 10px;
     margin: 2vw;
+    height: 70%;
+    font-size: 1.4em;
 }
 
 .nascosta {

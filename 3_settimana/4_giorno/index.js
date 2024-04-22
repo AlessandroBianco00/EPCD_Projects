@@ -27,7 +27,7 @@ const estraiNumero = function () {
     } else {
         let indiceTombola = Math.ceil(Math.random()*arrTombola.length);
         let num1 = arrTombola.splice(indiceTombola-1,1);
-        let num = num1[0];
+        let num = num1[0]; // arrTombola.splice(indiceTombola-1,1)[0]
         console.log(num);
         risultatoPar.innerHTML = 'Numero : ' + num;
         /*for (let j = 0; j < numeroCaselle; j++ ) {
