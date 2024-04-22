@@ -269,3 +269,9 @@ footer a {
         padding: 1em 15vw;
     }
 }
+
+@media print {
+    header, footer, aside, iframe, section {
+        display: none;
+    }
+}
