@@ -19,7 +19,11 @@ hr {
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
-  background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 160, 198, 1) 0%,
+    rgba(3, 109, 134, 1) 68%
+  );
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -140,7 +144,7 @@ h1 {
 
 #titolo-viola img {
   position: absolute;
-  bottom: 0;
+  bottom: 0.6em;
   width: 100%;
 }
 
@@ -342,7 +346,6 @@ aside div {
   right: 0.5vh;
   font-size: 4em;
   opacity: 0.3;
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -381,41 +384,44 @@ aside div p:last-child {
 
 #torna-su {
   position: fixed;
-    right: 0;
-    bottom: 10vh;
+  right: 0;
+  bottom: 10vh;
 }
 
-#torna-su i{
+#torna-su i {
   color: orangered;
 }
 
 #calendario {
   position: fixed;
-    right: 0;
-    bottom: 20vh;
+  right: 0;
+  bottom: 20vh;
 }
 
 #social {
   position: fixed;
-    right: 0;
-    bottom: 30vh;
+  right: 0;
+  bottom: 30vh;
 }
 
 @media screen and (min-width: 700px) {
   #calendario {
     top: 12vh;
   }
-  
+
   #social {
     top: 2vh;
   }
-  
 }
 
 /* FOOTER */
 footer {
   background: rgb(53, 53, 53);
-  background: linear-gradient(0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68%);
+  background: linear-gradient(
+    0deg,
+    rgba(53, 53, 53, 1) 0%,
+    rgba(5, 85, 103, 1) 68%
+  );
   box-shadow: 0 3px 3px #444;
   color: #f0f0f0;
   padding: 1em;
