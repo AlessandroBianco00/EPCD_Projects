@@ -1,0 +1,59 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #853f24;
+  font-size: 1.2rem;
+  line-height: 1.65;
+}
+
+h2,
+h3,
+h6 {
+  font-weight: bold;
+}
+
+/* SECTION */
+
+section h3 {
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+#articolo-miele {
+  background-color: #fef7e2;
+  padding: 3vw;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section h6 {
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+
+section p {
+  margin: 1em 0;
+}
+
+section img {
+  width: 100%;
+  max-width: 612px;
+}
+
+@media screen and (min-width: 993px) {
+  section img {
+    width: 50vw;
+    height: 35vw;
+  }
+
+  #articolo-miele {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  #articolo-miele div {
+    padding-left: 1em;
+  }
+}

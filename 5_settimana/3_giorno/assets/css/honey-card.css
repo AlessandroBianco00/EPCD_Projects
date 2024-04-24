@@ -1,0 +1,63 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #853f24;
+  font-size: 1.2rem;
+  line-height: 1.65;
+}
+
+h2,
+h3,
+h6 {
+  font-weight: bold;
+}
+/* MAIN */
+main {
+  padding: 2vw;
+}
+/* ARTICLE */
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.honey-card {
+  width: 350px;
+  height: 350px;
+  background-color: #fef7e2;
+  border-radius: 5%;
+  text-align: center;
+  padding-bottom: 1em;
+  overflow: hidden;
+  margin: 1vw;
+}
+
+.honey-card img {
+  width: 100%;
+}
+
+.info-product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5em 0;
+}
+
+.product-name {
+  font-weight: bold;
+}
+
+.product-details {
+  font-size: 0.8em;
+}
+
+.honey-card button {
+  background-color: #ffdf7f;
+  color: #853f24;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5em 3em;
+}

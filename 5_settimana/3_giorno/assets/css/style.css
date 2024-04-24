@@ -1,0 +1,152 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #853f24;
+  font-size: 1.2rem;
+  line-height: 1.65;
+}
+
+h2,
+h3,
+h6 {
+  font-weight: bold;
+}
+
+/* MAIN */
+main {
+  padding: 2vw;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 1em 0;
+}
+
+/* NAV */
+
+nav {
+  background-color: #fef7e2;
+  padding: 3vw 5vw;
+  font-size: 0.7em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  background-color: #ffdf7f;
+  padding: 1em;
+  border-radius: 25px;
+  font-weight: bold;
+  flex-basis: 12vw;
+  text-align: center;
+}
+
+#li-grande {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 15vw;
+  height: 5vw;
+}
+
+nav img {
+  width: 5vw;
+}
+
+/* ARTICLE */
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.honey-card {
+  width: 350px;
+  height: 350px;
+  background-color: #fef7e2;
+  border-radius: 5%;
+  text-align: center;
+  padding-bottom: 1em;
+  overflow: hidden;
+  margin: 1vw;
+}
+
+.honey-card img {
+  width: 100%;
+}
+
+.info-product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5em 0;
+}
+
+.product-name {
+  font-weight: bold;
+}
+
+.product-details {
+  font-size: 0.8em;
+}
+
+.honey-card button {
+  background-color: #ffdf7f;
+  color: #853f24;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5em 3em;
+}
+
+/* SECTION */
+
+section h3 {
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+#articolo-miele {
+  background-color: #fef7e2;
+  padding: 3vw;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section h6 {
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+
+section p {
+  margin: 1em 0;
+}
+
+section img {
+  width: 100%;
+  max-width: 612px;
+}
+
+@media screen and (min-width: 993px) {
+  section img {
+    width: 50vw;
+    height: 35vw;
+  }
+
+  #articolo-miele {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  #articolo-miele div {
+    padding-left: 1em;
+  }
+}
