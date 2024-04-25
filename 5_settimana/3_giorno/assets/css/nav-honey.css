@@ -4,45 +4,151 @@ body {
   color: #853f24;
   font-size: 1.2rem;
   line-height: 1.65;
+  display: flex;
+  justify-content: center;
 }
-
-h2,
-h3,
-h6 {
-  font-weight: bold;
-}
-/* NAV */
 
 nav {
   background-color: #fef7e2;
-  padding: 3vw 5vw;
-  font-size: 0.7em;
+  border-radius: 25%;
+  width: 90vw;
+  height: 90vw;
+  display: flex;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  padding: 2vw;
 }
 
 nav li {
   background-color: #ffdf7f;
-  padding: 1em;
-  border-radius: 25px;
+  border-radius: 50px;
   font-weight: bold;
-  flex-basis: 12vw;
+  flex-basis: 30vw;
   text-align: center;
+  padding: 0.8em;
 }
 
 #li-grande {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-basis: 15vw;
-  height: 5vw;
+  justify-content: space-evenly;
+  flex-basis: 70vw;
+  height: 15vw;
+  font-size: 1.2em;
 }
 
 nav img {
-  width: 5vw;
+  width: 15%;
+}
+
+@media screen and (min-width: 577px) {
+  body {
+    display: block;
+  }
+
+  nav {
+    width: 100vw;
+    height: 15vw;
+    border-radius: 0;
+    display: block;
+    padding: 3vw 0;
+    font-size: 0.7em;
+  }
+
+  nav ul {
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  nav li {
+    padding: 0.7em;
+    border-radius: 25px;
+    flex-basis: 12vw;
+    height: 5vw;
+    align-content: center;
+  }
+
+  #li-grande {
+    justify-content: space-between;
+    flex-basis: 15vw;
+    height: 5vw;
+    order: 1;
+  }
+
+  #penultimo-li {
+    order: 2;
+  }
+  #ultimo-li {
+    order: 3;
+  }
+
+  nav img {
+    width: 5vw;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    display: flex;
+  }
+
+  nav {
+    height: 100vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: sticky;
+    top: 0;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    padding: 5%;
+  }
+
+  nav li {
+    margin: 1em 0;
+    flex-grow: 1;
+    padding: 1.5em;
+    border-radius: 50px;
+  }
+
+  #li-grande {
+    order: 0;
+    justify-content: space-evenly;
+  }
+
+  main {
+    flex-grow: 1; /* effetto grafico barra laterale */
+  }
+}
+
+@media screen and (min-width: 993px) {
+  nav {
+    width: 20vw;
+  }
+
+  nav li {
+    margin: 1em 0;
+    padding: 1.2em;
+    border-radius: 50px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  nav {
+    width: 15vw;
+  }
+
+  nav li {
+    padding: 0.7em;
+    border-radius: 50px;
+  }
 }
