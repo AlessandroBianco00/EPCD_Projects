@@ -102,7 +102,7 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <img src="" alt="Agency logo" />
+          <img src="./assets/logo.png" alt="Agency logo" style="width: 5vw" />
           <button
             class="navbar-toggler"
             type="button"
@@ -117,19 +117,19 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Saldi</a>
+                <a class="nav-link" href="#saldi">Saldi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Welcome Summer</a>
+                <a class="nav-link" href="#welcome-summer">Welcome Summer</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Last Minute</a>
+                <a class="nav-link" href="#last-minute">Last Minute</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Recensioni</a>
+                <a class="nav-link" href="#recensioni">Recensioni</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -149,17 +149,30 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
     </header>
     <main class="px-5 py-3">
       <!-- HERO -->
-      <div class="text-center bg-body-tertiary mb-3 p-3 text-secondary">
+      <div
+        class="text-center bg-body-tertiary mb-3 p-5 text-secondary"
+        id="home"
+      >
         <h1 class="border-bottom">
           Eveline-R- <span class="fs-5">Feel the Freedom</span>
         </h1>
-        <p>Scopri le destinazioni più calde del momento!</p>
+        <p class="fst-italic">Scopri le destinazioni più calde del momento!</p>
         <button type="button" class="btn btn-info px-4 py-2 text-light fw-bold">
           Prenota ora
         </button>
       </div>
+      <!-- CONTA VOLI -->
+      <div>
+        <button
+          id="conteggio"
+          type="button"
+          class="btn btn-danger rounded-pill"
+        >
+          Conta le destinazioni
+        </button>
+      </div>
       <!-- SEZIONE SALDI -->
-      <div class="m-2">
+      <div class="m-2" id="saldi">
         <div class="d-flex justify-content-between">
           <h2>Saldi</h2>
           <a
@@ -176,72 +189,80 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
         <div class="collapse show" id="collapseExample">
           <div class="container">
             <div class="row g-3">
-              <div class="card col-6 px-0 border-3 border-info">
-                <img
-                  src="./isola.png"
-                  class="card-img-top"
-                  alt="foto destinazione"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Enim nunc faucibus a pellentesque. Elementum tempus
-                    egestas sed sed risus.
-                  </p>
-                  <a href="#" class="btn btn-info">Prenota</a>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card px-0 border-2 border-info destinazioneVacanza">
+                  <img
+                    src="./assets/isola.png"
+                    class="card-img-top"
+                    alt="foto destinazione"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Enim nunc faucibus a pellentesque. Elementum
+                      tempus egestas sed sed risus.
+                    </p>
+                    <a href="#" class="btn btn-info">Prenota</a>
+                  </div>
                 </div>
               </div>
-              <div class="card col-6 px-0 border-3 border-info">
-                <img
-                  src="./isola.png"
-                  class="card-img-top"
-                  alt="foto destinazione"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Enim nunc faucibus a pellentesque. Elementum tempus
-                    egestas sed sed risus.
-                  </p>
-                  <a href="#" class="btn btn-info">Prenota</a>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card px-0 border-3 border-info destinazioneVacanza">
+                  <img
+                    src="./assets/isola.png"
+                    class="card-img-top"
+                    alt="foto destinazione"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Enim nunc faucibus a pellentesque. Elementum
+                      tempus egestas sed sed risus.
+                    </p>
+                    <a href="#" class="btn btn-info">Prenota</a>
+                  </div>
                 </div>
               </div>
-              <div class="card col-6 px-0 border-3 border-info">
-                <img
-                  src="./isola.png"
-                  class="card-img-top"
-                  alt="foto destinazione"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Enim nunc faucibus a pellentesque. Elementum tempus
-                    egestas sed sed risus.
-                  </p>
-                  <a href="#" class="btn btn-info">Prenota</a>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card px-0 border-3 border-info destinazioneVacanza">
+                  <img
+                    src="./assets/isola.png"
+                    class="card-img-top"
+                    alt="foto destinazione"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Enim nunc faucibus a pellentesque. Elementum
+                      tempus egestas sed sed risus.
+                    </p>
+                    <a href="#" class="btn btn-info">Prenota</a>
+                  </div>
                 </div>
               </div>
-              <div class="card col-6 px-0 border-3 border-info">
-                <img
-                  src="./isola.png"
-                  class="card-img-top"
-                  alt="foto destinazione"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Enim nunc faucibus a pellentesque. Elementum tempus
-                    egestas sed sed risus.
-                  </p>
-                  <a href="#" class="btn btn-info">Prenota</a>
+              <div class="col-6 col-md-4 col-lg-3 d-md-none d-lg-block">
+                <div class="card px-0 border-3 border-info destinazioneVacanza">
+                  <img
+                    src="./assets/isola.png"
+                    class="card-img-top"
+                    alt="foto destinazione"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Enim nunc faucibus a pellentesque. Elementum
+                      tempus egestas sed sed risus.
+                    </p>
+                    <a href="#" class="btn btn-info">Prenota</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -249,7 +270,7 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
         </div>
       </div>
       <!-- WELCOME SUMMER -->
-      <div class="m-2">
+      <div class="m-2" id="welcome-summer">
         <div class="d-flex justify-content-between">
           <h2>Welcome Summer</h2>
           <a
@@ -265,174 +286,196 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
         </div>
         <div class="collapse show" id="collapseExample">
           <div class="container">
-            <div class="row gx-0 g-3">
-              <div class="card col-6 px-0 shadow-lg">
-                <span
-                  ><img
-                    src="./isola.png"
-                    class="card-img-top"
-                    alt="foto destinazione"
-                  />
+            <div class="row g-4">
+              <div class="col-6 col-lg-4 col-xl-2">
+                <div class="card px-0 shadow-lg destinazioneVacanza">
                   <span
-                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                  >
-                    HOT</span
-                  >
-                </span>
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Enim nunc faucibus a pellentesque. Elementum tempus
-                    egestas sed sed risus.
-                  </p>
-                  <a href="#" class="btn btn-info">Prenota</a>
+                    ><img
+                      src="./assets/isola.png"
+                      class="card-img-top"
+                      alt="foto destinazione"
+                  /></span>
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Enim nunc faucibus a pellentesque. Elementum
+                      tempus egestas sed sed risus.
+                    </p>
+                    <a href="#" class="btn btn-info">Prenota</a>
+                  </div>
                 </div>
               </div>
-              <div class="card col-6 px-0 shadow-lg">
-                <span
-                  ><img
-                    src="./isola.png"
-                    class="card-img-top"
-                    alt="foto destinazione"
-                  />
+              <div class="col-6 col-lg-4 col-xl-2">
+                <div class="card px-0 shadow-lg destinazioneVacanza">
                   <span
-                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                  >
-                    HOT</span
-                  >
-                </span>
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Enim nunc faucibus a pellentesque. Elementum tempus
-                    egestas sed sed risus.
-                  </p>
-                  <a href="#" class="btn btn-info">Prenota</a>
+                    ><img
+                      src="./assets/isola.png"
+                      class="card-img-top"
+                      alt="foto destinazione"
+                  /></span>
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Enim nunc faucibus a pellentesque. Elementum
+                      tempus egestas sed sed risus.
+                    </p>
+                    <a href="#" class="btn btn-info">Prenota</a>
+                  </div>
                 </div>
               </div>
-              <div class="card col-6 px-0 shadow-lg">
-                <span
-                  ><img
-                    src="./isola.png"
-                    class="card-img-top"
-                    alt="foto destinazione"
-                  />
+              <div class="col-6 col-lg-4 col-xl-2">
+                <div class="card px-0 shadow-lg destinazioneVacanza">
                   <span
-                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                  >
-                    HOT</span
-                  >
-                </span>
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Enim nunc faucibus a pellentesque. Elementum tempus
-                    egestas sed sed risus.
-                  </p>
-                  <a href="#" class="btn btn-info">Prenota</a>
+                    ><img
+                      src="./assets/isola.png"
+                      class="card-img-top"
+                      alt="foto destinazione"
+                  /></span>
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Enim nunc faucibus a pellentesque. Elementum
+                      tempus egestas sed sed risus.
+                    </p>
+                    <a href="#" class="btn btn-info">Prenota</a>
+                  </div>
                 </div>
               </div>
-              <div class="card col-6 px-0 shadow-lg">
-                <span
-                  ><img
-                    src="./isola.png"
-                    class="card-img-top"
-                    alt="foto destinazione"
-                  />
+              <div class="col-6 col-lg-4 col-xl-2">
+                <div class="card px-0 shadow-lg destinazioneVacanza">
                   <span
-                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                  >
-                    HOT</span
-                  >
-                </span>
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Enim nunc faucibus a pellentesque. Elementum tempus
-                    egestas sed sed risus.
-                  </p>
-                  <a href="#" class="btn btn-info">Prenota</a>
+                    ><img
+                      src="./assets/isola.png"
+                      class="card-img-top"
+                      alt="foto destinazione"
+                  /></span>
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Enim nunc faucibus a pellentesque. Elementum
+                      tempus egestas sed sed risus.
+                    </p>
+                    <a href="#" class="btn btn-info">Prenota</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 col-xl-2">
+                <div class="card px-0 shadow-lg destinazioneVacanza">
+                  <span
+                    ><img
+                      src="./assets/isola.png"
+                      class="card-img-top"
+                      alt="foto destinazione"
+                  /></span>
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Enim nunc faucibus a pellentesque. Elementum
+                      tempus egestas sed sed risus.
+                    </p>
+                    <a href="#" class="btn btn-info">Prenota</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 col-xl-2">
+                <div class="card px-0 shadow-lg destinazioneVacanza">
+                  <span
+                    ><img
+                      src="./assets/isola.png"
+                      class="card-img-top"
+                      alt="foto destinazione"
+                  /></span>
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Enim nunc faucibus a pellentesque. Elementum
+                      tempus egestas sed sed risus.
+                    </p>
+                    <a href="#" class="btn btn-info">Prenota</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- WELCOME SUMMER -->
-      <div>
+      <!-- OFFERTA DEL GIORNO -->
+      <div class="d-none d-md-block">
         <h2>Offerta del giorno</h2>
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-8">
               <img
-                src="./isola-2.png"
-                class="card-img-top"
+                src="./assets/isola-2.png"
+                class="card-img-top rounded-2 shadow"
                 alt="foto destinazione"
               />
             </div>
-            <div class="col-6">
+            <div class="col-4">
               <h3>Fushifaru Maldives</h3>
-              <p>15.01.2023-31.01.2023</p>
+              <p class="font-monospace">15.01.2023-31.01.2023</p>
               <p>Ville a partire da 500 &euro;, non farteli sfuggire!</p>
-              <button type="button" class="btn btn-dark rounded-pill">
-                Best offert
-              </button>
+              <p class="badge text-bg-dark rounded-pill">Best offert</p>
             </div>
           </div>
         </div>
       </div>
       <!-- LAST MINUTE -->
-      <div>
+      <div id="last-minute">
         <h2>Last Minute</h2>
         <div class="container">
-          <div class="row g-2">
-            <div class="col-6 shadow-lg">
+          <div class="row g-4">
+            <div class="col-6">
               <img
-                class="img-fluid rounded-1"
-                src="isola-2.png"
+                class="img-fluid rounded-1 shadow-lg destinazioneVacanza"
+                src="./assets/isola-2.png"
                 alt="destination photo"
               />
             </div>
-            <div class="col-6 shadow-lg">
+            <div class="col-6">
               <img
-                class="img-fluid rounded-1"
-                src="isola-2.png"
+                class="img-fluid rounded-1 shadow-lg destinazioneVacanza"
+                src="./assets/isola-2.png"
                 alt="destination photo"
               />
             </div>
-            <div class="col-6 shadow-lg">
+            <div class="col-6">
               <img
-                class="img-fluid rounded-1"
-                src="isola-2.png"
+                class="img-fluid rounded-1 shadow-lg destinazioneVacanza"
+                src="./assets/isola-2.png"
                 alt="destination photo"
               />
             </div>
-            <div class="col-6 shadow-lg">
+            <div class="col-6">
               <img
-                class="img-fluid rounded-1"
-                src="isola-2.png"
+                class="img-fluid rounded-1 shadow-lg destinazioneVacanza"
+                src="./assets/isola-2.png"
                 alt="destination photo"
               />
             </div>
-            <div class="col-6 shadow-lg">
+            <div class="col-6">
               <img
-                class="img-fluid rounded-1"
-                src="isola-2.png"
+                class="img-fluid rounded-1 shadow-lg destinazioneVacanza"
+                src="./assets/isola-2.png"
                 alt="destination photo"
               />
             </div>
-            <div class="col-6 shadow-lg">
+            <div class="col-6">
               <img
-                class="img-fluid rounded-1"
-                src="isola-2.png"
+                class="img-fluid rounded-1 shadow-lg destinazioneVacanza"
+                src="./assets/isola-2.png"
                 alt="destination photo"
               />
             </div>
@@ -440,12 +483,16 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
         </div>
       </div>
       <!-- RECENSIONI -->
-      <div class="text-center">
+      <div class="text-center mt-3" id="recensioni">
         <h2>Dicono di noi</h2>
         <div class="container">
           <div class="row">
             <div class="col-3">
-              <img src="./image02.png" alt="customer pic" />
+              <img
+                src="./assets/image02.png"
+                alt="customer pic"
+                class="border border-info rounded-circle"
+              />
             </div>
             <div class="col-9 text-start">
               <h6 class="fw-bold">Username</h6>
@@ -465,7 +512,11 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
         <div class="container">
           <div class="row">
             <div class="col-3">
-              <img src="./image02.png" alt="customer pic" />
+              <img
+                src="./assets/image02.png"
+                alt="customer pic"
+                class="border border-info rounded-circle"
+              />
             </div>
             <div class="col-9 text-start">
               <h6 class="fw-bold">Username</h6>
@@ -485,7 +536,11 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
         <div class="container">
           <div class="row">
             <div class="col-3">
-              <img src="./image02.png" alt="customer pic" />
+              <img
+                src="./assets/image02.png"
+                alt="customer pic"
+                class="border border-info rounded-circle"
+              />
             </div>
             <div class="col-9 text-start">
               <h6 class="fw-bold">Username</h6>
@@ -506,15 +561,65 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
     </main>
     <!-- FOOTER -->
     <footer class="text-center bg-dark text-secondary py-3">
-      <button type="button" class="btn btn-outline-secondary mb-3">
+      <button
+        type="button"
+        class="btn btn-outline-secondary mb-3"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
         Contattaci
       </button>
       <p>&copy; Kalina Travel LTD. All Rights Reserved.</p>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Inserisci la tua mail
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="d-flex">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
