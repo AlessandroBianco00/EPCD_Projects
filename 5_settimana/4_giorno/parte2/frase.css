@@ -1,0 +1,110 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
+}
+
+#testoAlternato {
+  font-family: "Zilla Slab", serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #191919;
+  border: solid 2px #191919;
+  padding: 1em 2em;
+}
+
+#testoAlternato p {
+  position: relative;
+  width: 20em;
+}
+
+.parole i {
+  position: absolute;
+  left: 12em;
+}
+
+.parole i:first-of-type {
+  color: cornflowerblue;
+  animation: fadeIn1 15s linear 0.5s infinite;
+}
+
+.parole i:nth-child(2) {
+  color: cornflowerblue;
+  animation: fadeIn2 15s linear 0.5s infinite;
+}
+
+.parole i:last-of-type {
+  color: cornflowerblue;
+  animation: fadeIn3 15s linear 0.5s infinite;
+}
+
+@keyframes fadeIn1 {
+  0% {
+    opacity: 0;
+  }
+
+  16% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  67% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+
+  67% {
+    opacity: 0;
+  }
+
+  83% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+body {
+  font-family: "Handlee", cursive, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+main {
+  padding: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+}
+
+.post-it {
+  width: 18vw;
+  height: 15vw;
+  margin: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 0.3s linear 0s;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.post-it:hover {
+  rotate: 0deg;
+  scale: 1.4;
+  z-index: 1;
+}
+
+.giallo {
+  background-image: linear-gradient(#ffffc0, #eaea90);
+  rotate: -4deg;
+}
+
+.verde {
+  background-image: linear-gradient(#d7ffc0, #b5d08e);
+  rotate: 4deg;
+}
+
+.cobalto {
+  background-image: linear-gradient(#deeeff, #92a6ac);
+  rotate: -4deg;
+}
+
+@keyframes onloadPostit {
+  0% {
+    visibility: hidden;
+    scale: 5;
+    z-index: 10;
+  }
+
+  50% {
+    scale: 2.5;
+    z-index: 5;
+  }
+
+  100% {
+    visibility: visible;
+    scale: auto;
+    z-index: auto;
+  }
+}
+
+.animated {
+  animation: onloadPostit 0.5s linear 0s forwards;
+}
