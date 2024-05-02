@@ -4,7 +4,8 @@
   $custom-duration: 1s,
   $custom-delay: 0s,
   $custom-start: 0px -10px,
-  $custom-end: 0px 0px
+  $custom-end: 0px 0px,
+  $name: "heroAnimation"
 ) {
   @keyframes heroAnimation {
     0% {
@@ -17,5 +18,5 @@
       translate: $custom-end;
     }
   }
-  animation: heroAnimation $custom-duration linear $custom-delay;
+  animation: $name $custom-duration linear $custom-delay;
 }

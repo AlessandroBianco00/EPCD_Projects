@@ -5,3 +5,12 @@
   box-shadow: $custom-shadow;
   border: $custom-border;
 }
+
+@mixin grid($itemsPerLine: 2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  img {
+    flex-basis: 90% / $itemsPerLine;
+  }
+}

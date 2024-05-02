@@ -140,43 +140,103 @@ body {
 }
 
 /* PARTIAL SPACING */
-.margin-xs {
+.margin-block-xs {
+  display: block;
   margin: 0.2em;
 }
 
-.margin-sm {
+.margin-block-sm {
+  display: block;
   margin: 0.5em;
 }
 
-.margin-md {
+.margin-block-md {
+  display: block;
   margin: 1em;
 }
 
-.margin-lg {
+.margin-block-lg {
+  display: block;
   margin: 1.5em;
 }
 
-.margin-xl {
+.margin-block-xl {
+  display: block;
   margin: 2em;
 }
 
-.padding-xs {
+.margin-inline-xs {
+  display: inline;
+  margin: 0.2em;
+}
+
+.margin-inline-sm {
+  display: inline;
+  margin: 0.5em;
+}
+
+.margin-inline-md {
+  display: inline;
+  margin: 1em;
+}
+
+.margin-inline-lg {
+  display: inline;
+  margin: 1.5em;
+}
+
+.margin-inline-xl {
+  display: inline;
+  margin: 2em;
+}
+
+.padding-block-xs {
+  display: block;
   padding: 0.2em;
 }
 
-.padding-sm {
+.padding-block-sm {
+  display: block;
   padding: 0.5em;
 }
 
-.padding-md {
+.padding-block-md {
+  display: block;
   padding: 1em;
 }
 
-.padding-lg {
+.padding-block-lg {
+  display: block;
   padding: 1.5em;
 }
 
-.padding-xl {
+.padding-block-xl {
+  display: block;
+  padding: 2em;
+}
+
+.padding-inline-xs {
+  display: inline;
+  padding: 0.2em;
+}
+
+.padding-inline-sm {
+  display: inline;
+  padding: 0.5em;
+}
+
+.padding-inline-md {
+  display: inline;
+  padding: 1em;
+}
+
+.padding-inline-lg {
+  display: inline;
+  padding: 1.5em;
+}
+
+.padding-inline-xl {
+  display: inline;
   padding: 2em;
 }
 
@@ -232,22 +292,22 @@ body {
 header {
   font-size: 1.1em;
 }
-header nav {
+header #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #282828;
 }
-header nav img {
+header #navbar img {
   width: 5vw;
 }
-header nav ul {
+header #navbar ul {
   display: flex;
 }
-header nav ul li {
+header #navbar ul li {
   margin-left: 1em;
 }
-header nav ul li a {
+header #navbar ul li a {
   color: #f4f4f4;
   text-decoration: none;
 }
@@ -259,7 +319,7 @@ header #hero {
 header #hero h1 {
   font-size: 2.6em;
   font-weight: bold;
-  animation: heroAnimation 1s linear 0s;
+  animation: "heroAnimation" 1s linear 0s;
 }
 @keyframes heroAnimation {
   0% {
@@ -273,7 +333,8 @@ header #hero h1 {
 }
 header #hero p {
   padding: 2em 0;
-  animation: heroAnimation 1s linear 0s;
+  width: 50%;
+  animation: "heroAnimation" 1s linear 0s;
 }
 @keyframes heroAnimation {
   0% {
@@ -286,7 +347,7 @@ header #hero p {
   }
 }
 header #hero button {
-  animation: heroAnimation 2s linear 0.5s;
+  animation: "heroAnimation" 2s linear 0.5s;
 }
 @keyframes heroAnimation {
   0% {
@@ -303,7 +364,7 @@ header #hero img {
   border-radius: 21%;
   box-shadow: 5px 5px 5px #282828;
   border: 3px aqua solid;
-  animation: heroAnimation 0.5s linear 0.5s;
+  animation: "heroAnimation" 0.5s linear 0.5s;
 }
 @keyframes heroAnimation {
   0% {
@@ -317,15 +378,17 @@ header #hero img {
 }
 
 /* PARTIAL ARTICLE */
-article {
+#img-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-article img {
-  width: 40vw;
+#img-grid img {
+  flex-basis: 45%;
+}
+#img-grid img {
+  width: 100%;
   border-radius: 50px;
-  padding: 1vw;
   border-radius: 21%;
   box-shadow: 2px 2px 10px #282828;
   border: none;

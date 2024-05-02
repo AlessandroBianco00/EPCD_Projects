@@ -9,7 +9,7 @@ $color-map: (
 @each $name, $value in $color-map {
   .btn-#{$name} {
     background-color: #{$value};
-    color: #f4f4f4;
+    color: $colore-testo;
     border-radius: 10px;
     border: none;
     cursor: pointer;

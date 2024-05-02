@@ -8,9 +8,17 @@ $margin-map: (
   xl: 2em,
 );
 
-@each $size, $value in $margin-map {
-  .margin-#{$size} {
-    margin: #{$value};
+$display-value: (
+  block: block,
+  inline: inline,
+);
+
+@each $display, $d-value in $display-value {
+  @each $size, $value in $margin-map {
+    .margin-#{$display}-#{$size} {
+      display: $d-value;
+      margin: #{$value};
+    }
   }
 }
 
@@ -22,8 +30,11 @@ $padding-map: (
   xl: 2em,
 );
 
-@each $size, $value in $padding-map {
-  .padding-#{$size} {
-    padding: #{$value};
+@each $display, $d-value in $display-value {
+  @each $size, $value in $margin-map {
+    .padding-#{$display}-#{$size} {
+      display: $d-value;
+      padding: #{$value};
+    }
   }
 }
