@@ -1,0 +1,7 @@
+/* PARTIAL MIXINS */
+
+@mixin floating($custom-shadow: none, $custom-border: none) {
+  border-radius: 21%;
+  box-shadow: $custom-shadow;
+  border: $custom-border;
+}

@@ -1,0 +1,29 @@
+/* PARTIAL SPACING */
+
+$margin-map: (
+  xs: 0.2em,
+  sm: 0.5em,
+  md: 1em,
+  lg: 1.5em,
+  xl: 2em,
+);
+
+@each $size, $value in $margin-map {
+  .margin-#{$size} {
+    margin: #{$value};
+  }
+}
+
+$padding-map: (
+  xs: 0.2em,
+  sm: 0.5em,
+  md: 1em,
+  lg: 1.5em,
+  xl: 2em,
+);
+
+@each $size, $value in $padding-map {
+  .padding-#{$size} {
+    padding: #{$value};
+  }
+}

@@ -1,0 +1,45 @@
+/* PARTIAL HEADER */
+
+header {
+  font-size: $font-md;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $sfondo-nav;
+    img {
+      width: 5vw;
+    }
+    ul {
+      display: flex;
+      li {
+        margin-left: 1em;
+        a {
+          color: #f4f4f4;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  #hero {
+    background-color: $colore-viola;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      @include mainTitle;
+      @include heroParameters(1s, 0s, 0px -10px, 0px 0px);
+    }
+    p {
+      padding: 2em 0;
+      @include heroParameters(1s, 0s, 0px -10px, 0px 0px);
+    }
+    button {
+      @include heroParameters(2s, 0.5s, 5px -20px, 0px 0px);
+    }
+    img {
+      width: 20vw;
+      @include floating(5px 5px 5px $sfondo-nav, 3px aqua solid);
+      @include heroParameters(0.5s, 0.5s, -10px -20px, 0px 0px);
+    }
+  }
+}

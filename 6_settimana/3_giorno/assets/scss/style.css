@@ -1,0 +1,332 @@
+/* PARTIAL RESET */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* PARTIAL COLORS */
+/* PARTIAL FONT */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: #f4f4f4;
+}
+
+/* PARTIAL SPACING */
+.margin-xs {
+  margin: 0.2em;
+}
+
+.margin-sm {
+  margin: 0.5em;
+}
+
+.margin-md {
+  margin: 1em;
+}
+
+.margin-lg {
+  margin: 1.5em;
+}
+
+.margin-xl {
+  margin: 2em;
+}
+
+.padding-xs {
+  padding: 0.2em;
+}
+
+.padding-sm {
+  padding: 0.5em;
+}
+
+.padding-md {
+  padding: 1em;
+}
+
+.padding-lg {
+  padding: 1.5em;
+}
+
+.padding-xl {
+  padding: 2em;
+}
+
+/* PARTIAL BUTTONS */
+.btn-primo {
+  background-color: #0e6cff;
+  color: #f4f4f4;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  margin-right: 1em;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.btn-primo:hover {
+  transform: scale(1.15);
+}
+
+.btn-secondo {
+  background-color: #ff8700;
+  color: #f4f4f4;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  margin-right: 1em;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.btn-secondo:hover {
+  transform: scale(1.15);
+}
+
+.btn-terzo {
+  background-color: #4caf50;
+  color: #f4f4f4;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  margin-right: 1em;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.btn-terzo:hover {
+  transform: scale(1.15);
+}
+
+/* PARTIAL MIXINS */
+/* PARTIAL ANIMATIONS */
+/* PARTIAL HEADER */
+header {
+  font-size: 1.1em;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282828;
+}
+header nav img {
+  width: 5vw;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin-left: 1em;
+}
+header nav ul li a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+header #hero {
+  background-color: #640fc5;
+  display: flex;
+  justify-content: space-between;
+}
+header #hero h1 {
+  font-size: 2.6em;
+  font-weight: bold;
+  animation: heroAnimation 1s linear 0s;
+}
+@keyframes heroAnimation {
+  0% {
+    opacity: 0;
+    translate: 0px -10px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0px 0px;
+  }
+}
+header #hero p {
+  padding: 2em 0;
+  animation: heroAnimation 1s linear 0s;
+}
+@keyframes heroAnimation {
+  0% {
+    opacity: 0;
+    translate: 0px -10px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0px 0px;
+  }
+}
+header #hero button {
+  animation: heroAnimation 2s linear 0.5s;
+}
+@keyframes heroAnimation {
+  0% {
+    opacity: 0;
+    translate: 5px -20px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0px 0px;
+  }
+}
+header #hero img {
+  width: 20vw;
+  border-radius: 21%;
+  box-shadow: 5px 5px 5px #282828;
+  border: 3px aqua solid;
+  animation: heroAnimation 0.5s linear 0.5s;
+}
+@keyframes heroAnimation {
+  0% {
+    opacity: 0;
+    translate: -10px -20px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0px 0px;
+  }
+}
+
+/* PARTIAL ARTICLE */
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+article img {
+  width: 40vw;
+  border-radius: 50px;
+  padding: 1vw;
+  border-radius: 21%;
+  box-shadow: 2px 2px 10px #282828;
+  border: none;
+}/*# sourceMappingURL=style.css.map */

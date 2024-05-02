@@ -1,0 +1,24 @@
+/* PARTIAL BUTTONS */
+
+$color-map: (
+  primo: $colore-blu,
+  secondo: $colore-arancio,
+  terzo: $colore-verde,
+);
+
+@each $name, $value in $color-map {
+  .btn-#{$name} {
+    background-color: #{$value};
+    color: #f4f4f4;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    margin-right: 1em;
+    font-weight: bold;
+    font-size: $font-sm;
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+}
