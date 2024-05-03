@@ -11,6 +11,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   img {
-    flex-basis: 90% / $itemsPerLine;
+    flex-basis: calc(90% / $itemsPerLine);
   }
 }
