@@ -3,7 +3,8 @@ const scartaLibro = function (e) {
 };
 
 const carrello = document.getElementById("carrello");
-const arrayCarello = [];
+const arrayCarello = [...JSON.parse(localStorage.getItem("carrello"))];
+console.log(arrayCarello);
 
 const addToCart = function (e) {
   const liArticolo = document.createElement("li");
@@ -16,15 +17,20 @@ const addToCart = function (e) {
 };
 
 const recuperaCarello = function () {
-  /*let a = JSON.parse(localStorage.getItem("carrello"));*/
+  const carelloInMemoria = JSON.parse(localStorage.getItem("carrello"));
+  carelloInMemoria.forEach((book) => {
+    librosalvato = document.createElement("li");
+    librosalvato.innerText = book;
+    carrello.appendChild(librosalvato);
+  });
 };
 
 const stampaCatalogo = function (arrayLibri) {
   const divCatalogo = document.querySelector("article .row");
   arrayLibri.forEach((book) => {
     const divCarta = document.createElement("div");
-    divCarta.classList.add("col-3");
-    divCarta.innerHTML = `<div class="card">
+    divCarta.classList.add("col");
+    divCarta.innerHTML = `<div class="card h-100">
         <img src="${book.img}" class="card-img-top" alt="book cover">
         <div class="card-body">
           <h5 class="card-title"> ${book.title} </h5>
