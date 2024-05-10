@@ -4,8 +4,9 @@ const searchBottone = document.getElementById("btn-search");
 const album = document.getElementById("album-photo");
 const searchField = document.querySelector("form input");
 
-const dettaglioFoto = function (e) {
+const dettaglioFoto = function () {
   console.log(this);
+  window.location.href = `dettaglio.html?eventId=${this.id}`;
 };
 
 const unpackObj = function (object) {
@@ -32,6 +33,9 @@ const unpackObj = function (object) {
               <button
                 type="button"
                 class="btn btn-sm btn-outline-secondary"
+                onclick = "modalImg(event)"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
               >
                 View
               </button>
@@ -94,6 +98,12 @@ searchBottone.addEventListener("click", (e) => {
 
 const hideFunction = function (e) {
   e.target.closest(".col-md-4").classList.add("d-none");
+};
+
+const modalImg = function (e) {
+  const srcImmagine = e.target.closest(".card").children[0].getAttribute("src");
+  const immagineModale = document.getElementById("immagineModale");
+  immagineModale.setAttribute("src", srcImmagine);
 };
 
 window.onload = function () {
