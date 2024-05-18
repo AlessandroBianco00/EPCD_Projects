@@ -1,0 +1,42 @@
+#hero {
+  #hero-1 {
+    .hero-info {
+      padding: 2em;
+      h1 {
+        font-weight: bold;
+      }
+      p {
+        opacity: 0.7;
+      }
+      button {
+        font-weight: bold;
+        padding: 0.8em 1em;
+      }
+    }
+  }
+  #hero-2 {
+    ul {
+      padding: 1em 2em;
+      li {
+        margin-bottom: 0.8em;
+        .icons-hero {
+          width: 3em;
+          height: 3em;
+          background-color: #ffeeda;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 0.5em;
+          i {
+            color: #c87e33;
+          }
+        }
+        p {
+          font-size: 0.9em;
+          margin: 0.2em;
+        }
+      }
+    }
+  }
+}

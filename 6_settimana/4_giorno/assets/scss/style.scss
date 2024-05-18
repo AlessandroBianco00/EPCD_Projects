@@ -1,0 +1,27 @@
+@import "./bootstrap/functions"; //necessario per l'import "variables"
+@import "./bootstrap/variables"; // variabili da modificare
+
+// Aggiungo 2 colori a Bootstrap
+$new-theme-colors: (
+  "lilla": #7153fa,
+  "alien": #1acb97,
+  "neutral": #635670,
+  "titles": #18103f,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+@import "./bootstrap/bootstrap.scss"; // import bootstrap modificato
+
+//Formattazione generale e partials
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+}
+
+@import "./my_partials/navbar";
+@import "./my_partials/hero";
+@import "./my_partials/article";
+@import "./my_partials/footer";

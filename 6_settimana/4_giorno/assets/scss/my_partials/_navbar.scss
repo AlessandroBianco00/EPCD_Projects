@@ -1,0 +1,23 @@
+nav {
+  .container-fluid {
+    font-weight: bold;
+    .navbar-toggler {
+      padding: 0.35em 0.5em;
+    }
+    #div-profile {
+      display: flex;
+      .navbar-icons {
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 0.4em;
+        img {
+          height: 3em;
+        }
+      }
+      .navbar-icons:nth-child(1) {
+        width: 3em;
+        background-color: #ececec;
+      }
+    }
+  }
+}

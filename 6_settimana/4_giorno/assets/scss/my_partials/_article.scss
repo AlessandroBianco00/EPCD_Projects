@@ -1,0 +1,23 @@
+article {
+  background-color: #f5f4f9;
+  padding: 3em 1em;
+  .category {
+    margin-bottom: 2em;
+    .card {
+      .card-body {
+        padding: 2em 1.5em 1em;
+        .star-rating {
+          color: #fdac3f;
+        }
+      }
+      .teacher {
+        border-top: 1px solid #f5f4f9;
+        padding: 1em 1.5em 2em;
+        img {
+          width: 3em;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
