@@ -1,6 +1,7 @@
 "use strict";
 class User {
     constructor(_firstname, _lastname, _credit, _minutesOfCalls) {
+        this.minutePrice = 0.2;
         this.firstname = _firstname;
         this.lastname = _lastname;
         this.credit = _credit;
@@ -10,17 +11,17 @@ class User {
         this.credit += importo;
     }
     makeACall(callDuration) {
-        if (this.credit < 0.20) {
+        if (this.credit < this.minutePrice) {
             //throw new Error('Credito insufficiente')
             console.log('Credito insufficiente');
         }
         else {
             this.minutesOfCalls += callDuration;
-            this.credit -= 0.20 * callDuration;
+            this.credit -= this.minutePrice * callDuration;
         }
     }
     call404() {
-        return this.credit;
+        return `Credito residuo: ${this.credit}`;
     }
     getMInutesOfCalls() {
         return this.minutesOfCalls;
@@ -29,16 +30,16 @@ class User {
         this.minutesOfCalls = 0;
     }
 }
-const Utente01 = new User('Mario', 'Rossi', 1.70, 57);
-console.log(Utente01);
-const Utente02 = new User('Elisa', 'Russo', 0.19, 254);
-console.log(Utente02);
-Utente01.ricaricaTelefonica(0.53);
-Utente01.getMInutesOfCalls();
-Utente02.makeACall(2);
-Utente01.makeACall(3);
-Utente01.call404();
-console.log(Utente01);
-console.log(Utente02);
-Utente01.clearCalls();
-console.log(Utente01);
+const utente01 = new User('Mario', 'Rossi', 1.70, 57);
+const utente02 = new User('Elisa', 'Russo', 0.19, 254);
+console.log(utente01.call404());
+console.log(utente01.getMInutesOfCalls());
+console.log(utente02.call404());
+console.log(utente02.getMInutesOfCalls());
+utente01.ricaricaTelefonica(0.53);
+utente02.makeACall(2);
+utente01.makeACall(3);
+console.log(utente01);
+console.log(utente02);
+utente01.clearCalls();
+console.log(utente01);
