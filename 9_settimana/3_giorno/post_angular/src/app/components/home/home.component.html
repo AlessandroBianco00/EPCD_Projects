@@ -1,1 +1,24 @@
-<p>home works!</p>
+<header><app-navbar></app-navbar></header>
+
+<main>
+  <article class="text-bg-dark text-center p-5">
+    <h1>Post of the day!</h1>
+    <div class="conrainer">
+      <div class="row">
+        <div class="col">
+          <h3>{{ arrayPost[1].title }}</h3>
+          <p>{{ arrayPost[1].body }}</p>
+        </div>
+      </div>
+    </div>
+  </article>
+  <section class="container-fluid p-3 text-bg-secondary">
+    <div class="row">
+      <h2>Recommended posts</h2>
+      <div class="col-3"><img src="" alt="related picture" /></div>
+      <div class="col-3"><img src="" alt="related picture" /></div>
+      <div class="col-3"><img src="" alt="related picture" /></div>
+      <div class="col-3"><img src="" alt="related picture" /></div>
+    </div>
+  </section>
+</main>
