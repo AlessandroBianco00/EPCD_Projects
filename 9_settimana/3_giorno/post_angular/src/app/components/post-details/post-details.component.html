@@ -1,1 +1,12 @@
-<p>post-details works!</p>
+<div class="container">
+  <div class="row g-1" *ngIf="currentPost">
+    <div class="col-12 border border-dark">
+      <h3>{{ currentPost.title }}</h3>
+      <p>{{ currentPost.body }}</p>
+      <p>{{ currentPost.active ? "Attivo" : "Inattivo" }}</p>
+      <a class="btn btn-primary" href="javascript:history.go(-1)"
+        >Torna indietro</a
+      >
+    </div>
+  </div>
+</div>
