@@ -19,11 +19,4 @@ export class AllPostsComponent {
     this.allPostArray = this.PostSvc.arrayPostJson
   }
 
-  hideFormAll() {
-    this.PostSvc.hideForm()
-  }
-
-  hideSecond() {
-    console.log(this)
-  }
 }

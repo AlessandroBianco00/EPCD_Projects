@@ -9,4 +9,10 @@ import { iPost } from '../../../Models/post';
 export class SinglePostComponent {
 
   @Input() post!:iPost
+
+  show:boolean = false
+
+  toggleForm() {
+    this.show = !this.show
+  }
 }

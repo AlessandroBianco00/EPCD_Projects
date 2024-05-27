@@ -10,5 +10,6 @@
   <a class="btn btn-primary" [routerLink]="['/post-details', post.id]"
     >Dettaglio</a
   >
-  <ng-content></ng-content>
+  <ng-content *ngIf="show"></ng-content>
+  <button class="btn btn-warning" (click)="toggleForm()">Show Form</button>
 </div>
