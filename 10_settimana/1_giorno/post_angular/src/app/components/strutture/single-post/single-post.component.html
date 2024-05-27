@@ -1,0 +1,14 @@
+<div
+  class="p-1"
+  [ngClass]="{
+    'border border-primary border-3': post.active
+  }"
+>
+  <h3>{{ post.title }}</h3>
+  <p>{{ post.body }}</p>
+  <p>{{ post.active ? "Attivo" : "Inattivo" }}</p>
+  <a class="btn btn-primary" [routerLink]="['/post-details', post.id]"
+    >Dettaglio</a
+  >
+  <ng-content></ng-content>
+</div>

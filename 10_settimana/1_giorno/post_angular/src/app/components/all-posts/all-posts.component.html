@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row g-1" *ngIf="allPostArray[0]">
+    <div
+      class="col-12 border border-dark px-0"
+      *ngFor="let postAll of allPostArray"
+    >
+      <app-single-post [post]="postAll">
+        <form>
+          <input
+            type="text"
+            class="form-control"
+            name="titoloPost"
+            [(ngModel)]="postAll.title"
+          />
+        </form>
+        <button class="btn btn-warning" (click)="hideSecond()">
+          Hide Form
+        </button>
+      </app-single-post>
+    </div>
+  </div>
+</div>
