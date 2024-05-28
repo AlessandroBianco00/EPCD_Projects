@@ -11,10 +11,12 @@ import { PostDetailsComponent } from './components/post-details/post-details.com
 import { SinglePostComponent } from './components/strutture/single-post/single-post.component';
 import { AllPostsComponent } from './components/all-posts/all-posts.component';
 import { FormsModule } from '@angular/forms';
+import { TagColorDirective } from './direttive/tag-color.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
+    TagColorDirective,
     HomeComponent,
     NavbarComponent,
     ActivePostsComponent,
@@ -22,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     PostDetailsComponent,
     SinglePostComponent,
     AllPostsComponent,
+    TagColorDirective,
   ],
   imports: [
     BrowserModule,

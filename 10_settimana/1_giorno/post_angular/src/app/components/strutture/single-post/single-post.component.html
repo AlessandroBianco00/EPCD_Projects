@@ -7,9 +7,19 @@
   <h3>{{ post.title }}</h3>
   <p>{{ post.body }}</p>
   <p>{{ post.active ? "Attivo" : "Inattivo" }}</p>
-  <a class="btn btn-primary" [routerLink]="['/post-details', post.id]"
-    >Dettaglio</a
-  >
+  <p>
+    <span
+      appTagColor
+      class="badge text-dark me-1"
+      *ngFor="let tag of post.tags"
+      >{{ tag | uppercase }}</span
+    >
+  </p>
+  <div class="d-flex justify-content-between">
+    <a class="btn btn-primary" [routerLink]="['/post-details', post.id]"
+      >Dettaglio</a
+    >
+    <button class="btn btn-warning" (click)="toggleForm()">Show Form</button>
+  </div>
   <ng-content *ngIf="show"></ng-content>
-  <button class="btn btn-warning" (click)="toggleForm()">Show Form</button>
 </div>

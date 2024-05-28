@@ -252,13 +252,29 @@ export class PostServiceService {
     }
   ]
 
+  arrayTagRipetuti:string[] = []
+
   constructor() {
   }
 
-  hideForm():void {
-    console.log(this)
+  filterTags(array:string[]) {
+    this.arrayPostJson.forEach((post) => {
+      post.tags.forEach(tag => this.arrayTagRipetuti.push(tag))
+    })
+    this.arrayTagRipetuti = this.arrayTagRipetuti.sort()
+    console.log('tags',this.arrayTagRipetuti)
+    for (let i = 0; i < this.arrayTagRipetuti.length; i++) {
+      if (i === 0) {
+        array.push(this.arrayTagRipetuti[0])
+      }else{
+        if(this.arrayTagRipetuti[i] != this.arrayTagRipetuti[i-1]) {
+          array.push(this.arrayTagRipetuti[i])
+        }
+      }
+    }
   }
 
+  // Metodi con fetch (ora inutilizzati)
   shuffleArray(array:any[]) {
     for (let i = array.length - 1; i > 0; i--) {
      let j = Math.floor(Math.random() * (i + 1));

@@ -1,3 +1,8 @@
+<div *ngIf="tagsArray" class="my-2 text-center">
+  <span *ngFor="let tag of tagsArray" class="badge text-bg-secondary me-1">{{
+    tag | uppercase
+  }}</span>
+</div>
 <div class="container">
   <div class="row g-1" *ngIf="allPostArray[0]">
     <div
@@ -5,7 +10,7 @@
       *ngFor="let postAll of allPostArray"
     >
       <app-single-post [post]="postAll">
-        <form>
+        <form class="m-1">
           <input
             type="text"
             class="form-control"

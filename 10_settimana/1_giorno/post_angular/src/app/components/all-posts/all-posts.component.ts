@@ -11,12 +11,17 @@ export class AllPostsComponent {
 
   allPostArray:iPost[] = []
 
+  tagsArray:string[] = []
+
   constructor(
     private PostSvc: PostServiceService
   ) {}
 
   ngOnInit() {
     this.allPostArray = this.PostSvc.arrayPostJson
+
+    this.PostSvc.filterTags(this.tagsArray)
+    console.log(this.tagsArray)
   }
 
 }
