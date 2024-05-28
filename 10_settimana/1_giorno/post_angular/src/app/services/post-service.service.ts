@@ -274,6 +274,9 @@ export class PostServiceService {
     }
   }
 
+  //postFilter(tag:string, array:iPost[]) {
+  //}
+
   // Metodi con fetch (ora inutilizzati)
   shuffleArray(array:any[]) {
     for (let i = array.length - 1; i > 0; i--) {
