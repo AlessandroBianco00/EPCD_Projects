@@ -6,11 +6,12 @@ import { PreferitiComponent } from './pages/preferiti/preferiti.component';
 const routes: Routes = [
   {
     path:'',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path:'preferiti',
-    component: PreferitiComponent
+    component: PreferitiComponent,
+    title:'Preferiti'
   }
 ];
 

@@ -11,9 +11,12 @@ export class HomeComponent {
 
   allProductsArray:iProduct[] = []
 
+  arrayCart:iProduct[]=[]
+
   constructor(private PrdctSvc:ProductService ) {}
 
   ngOnInit() {
+    this.arrayCart = this.PrdctSvc.arrayCarrello
     this.PrdctSvc.getAllProducts().subscribe(products => {
       this.allProductsArray = products.products
       console.log(this.allProductsArray)
@@ -22,7 +25,15 @@ export class HomeComponent {
 
   toggleFavourite(prod:iProduct) {
     this.PrdctSvc.toggleFavourite(prod)
-    console.log(this.PrdctSvc.arrayPreferiti);
+  }
 
+  addToCart(prod:iProduct) {
+    this.PrdctSvc.addToCart(prod)
+    this.arrayCart = this.PrdctSvc.arrayCarrello
+  }
+
+  removeFromCart(prod:iProduct) {
+    this.PrdctSvc.removeFromCart(prod)
+    this.arrayCart = this.PrdctSvc.arrayCarrello
   }
 }

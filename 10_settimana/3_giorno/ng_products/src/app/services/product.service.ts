@@ -13,6 +13,8 @@ export class ProductService {
 
   arrayPreferiti:iProduct[]=[]
 
+  arrayCarrello:iProduct[]=[]
+
   constructor(private http:HttpClient) { }
 
   getAllProducts():Observable<iJsonObj> {
@@ -26,4 +28,14 @@ export class ProductService {
       this.arrayPreferiti.push(prod)
     }
   }
+
+  addToCart(prod:iProduct) {
+    this.arrayCarrello.push(prod)
+  }
+
+  removeFromCart(prod:iProduct) {
+    if (this.arrayCarrello.find(product => product.id == prod.id)) {
+      this.arrayCarrello = this.arrayCarrello.filter(product => product.id!= prod.id)
+    }
+}
 }
