@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>I tuoi preferiti</h2>
+  <div class="row g-2" *ngIf="allProductsArray">
+    <div
+      class="col-12 col-sm-6 col-md-3"
+      *ngFor="let product of allProductsArray"
+    >
+      <div class="card h-100">
+        <img
+          [src]="product.thumbnail"
+          class="card-img-top"
+          alt="foto prodotto"
+        />
+        <div class="card-body text-bg-success">
+          <h5 class="card-title">{{ product.title }}</h5>
+          <p>{{ product.brand }}</p>
+          <p>Category: {{ product.category }}</p>
+          <p class="card-text">
+            {{ product.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
