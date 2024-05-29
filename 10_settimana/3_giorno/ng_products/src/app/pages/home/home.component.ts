@@ -29,7 +29,6 @@ export class HomeComponent {
 
   addToCart(prod:iProduct) {
     this.PrdctSvc.addToCart(prod)
-    this.arrayCart = this.PrdctSvc.arrayCarrello
   }
 
   removeFromCart(prod:iProduct) {
