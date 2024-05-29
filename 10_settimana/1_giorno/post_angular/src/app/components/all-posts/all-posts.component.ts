@@ -13,17 +13,22 @@ export class AllPostsComponent {
 
   tagsArray:string[] = []
 
+  filter!:string
+
   constructor(
     private PostSvc: PostServiceService
   ) {}
 
   postFilter(tagSearched:string) {
-    console.log('filtro')
     console.log(tagSearched )
     this.allPostArray = this.PostSvc.arrayPostJson.filter(post =>
       post.tags[0] == tagSearched || post.tags[1] == tagSearched || post.tags[2] == tagSearched
     )
-    console.log('fine filtro')
+    this.filter = tagSearched
+  }
+
+  getArrayJson():void {
+    this.allPostArray = this.PostSvc.arrayPostJson
   }
 
   ngOnInit() {

@@ -262,7 +262,6 @@ export class PostServiceService {
       post.tags.forEach(tag => this.arrayTagRipetuti.push(tag))
     })
     this.arrayTagRipetuti = this.arrayTagRipetuti.sort()
-    console.log('tags',this.arrayTagRipetuti)
     for (let i = 0; i < this.arrayTagRipetuti.length; i++) {
       if (i === 0) {
         array.push(this.arrayTagRipetuti[0])
@@ -314,3 +313,9 @@ function shuffleArray(array:any[]) {
     [array[i], array[j]] = [array[j], array[i]];
   }
 }*/
+
+/* Codice simone per filtrare tag
+async getPostsByTag(tag: string) {
+    return this.postJsonArray.filter((post) => post.tags.includes(tag));
+  }
+*/
