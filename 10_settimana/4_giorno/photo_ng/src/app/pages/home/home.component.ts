@@ -15,10 +15,13 @@ export class HomeComponent {
 
   constructor(private PhotoSvc:PhotoService) {}
 
-
-
   ngOnInit(){
-    this.arrayFavourite = this.PhotoSvc.arrayFavourite
+    this.PhotoSvc.favourite$.subscribe(photo => {
+      if (this.arrayFavourite.find(pht => pht.id == photo.id)){
+        this.arrayFavourite = this.arrayFavourite.filter(pht => pht.id!= photo.id)
+      } else {
+        this.arrayFavourite.push(photo)
+      }})
 
     this.PhotoSvc.getAllPhotos().subscribe(photos => {
       photos.forEach(photo => {if(this.photosArray.length < 100) {
@@ -30,7 +33,6 @@ export class HomeComponent {
 
   toggleFavourite(photo:iPhoto){
     this.PhotoSvc.toggleFavourite(photo)
-    this.arrayFavourite = this.PhotoSvc.arrayFavourite
   }
 
   removeFromHome(pht:iPhoto) {

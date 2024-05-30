@@ -1,7 +1,7 @@
 import { iPhoto } from './../Models/photo';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,17 +12,16 @@ export class PhotoService {
 
   arrayFavourite:iPhoto[] = []
 
+  favouriteSubject = new Subject<iPhoto>()
+  favourite$ = this.favouriteSubject.asObservable()
+
   constructor(private http:HttpClient) { }
 
   getAllPhotos():Observable<iPhoto[]>{
     return this.http.get<iPhoto[]>(this.photoUrl)
   }
 
-  toggleFavourite(pht:iPhoto) {
-    if (this.arrayFavourite.find(photo => photo.id == pht.id)) {
-      this.arrayFavourite = this.arrayFavourite.filter(photo => photo.id!= pht.id)
-    } else {
-      this.arrayFavourite.push(pht)
-    }
+  toggleFavourite(photo:iPhoto){
+    this.favouriteSubject.next(photo)
   }
 }
