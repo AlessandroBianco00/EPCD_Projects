@@ -32,4 +32,8 @@ export class HomeComponent {
     this.PhotoSvc.toggleFavourite(photo)
     this.arrayFavourite = this.PhotoSvc.arrayFavourite
   }
+
+  removeFromHome(pht:iPhoto) {
+    this.photosArray = this.photosArray.filter(photo => photo.id!= pht.id)
+  }
 }

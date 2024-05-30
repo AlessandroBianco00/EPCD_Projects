@@ -1,9 +1,9 @@
 <p *ngIf="arrayFavourite">Numero foto preferite: {{ arrayFavourite.length }}</p>
 
 <div class="container" *ngIf="photosArray">
-  <div class="row">
+  <div class="row g-2">
     <div class="col" *ngFor="let photo of photosArray">
-      <div class="card">
+      <div class="card h-100">
         <img [src]="photo.thumbnailUrl" class="card-img-top" alt="photo" />
         <div class="card-body">
           <p class="card-title">{{ photo.title }}</p>
@@ -11,7 +11,9 @@
             <button class="btn btn-success" (click)="toggleFavourite(photo)">
               Add to favourite
             </button>
-            <button class="btn btn-danger">delete</button>
+            <button class="btn btn-danger" (click)="removeFromHome(photo)">
+              Delete
+            </button>
           </div>
         </div>
       </div>
