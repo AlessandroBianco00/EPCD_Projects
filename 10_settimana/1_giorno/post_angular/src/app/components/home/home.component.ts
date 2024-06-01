@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { iPost } from '../../Models/post';
 import { iPostVessel } from '../../Models/post-vessel';
+import { PostServiceService } from '../../services/post-service.service';
 
 @Component({
   selector: 'app-home',
@@ -12,42 +13,18 @@ export class HomeComponent {
   urlJson:string = '../../../assets/db.json'
 
   arrayPost:iPost[] = []
-  arrayPool:number[] =[]
+  arrayIndici:number[] =[]
+  dailyPost:iPost[] = []
   arrayEstrazione:iPost[] =[]
 
+  constructor(
+    private PostSvc: PostServiceService
+  ) {}
+
   ngOnInit() {
-    this.getPosts()
+    this.arrayPost = this.PostSvc.arrayPostJson
+    this.PostSvc.getRandomPosts(this.arrayIndici, this.dailyPost, 1)
+    this.PostSvc.getRandomPosts(this.arrayIndici, this.arrayEstrazione, 4)
   }
 
-  shuffleArray(array:any[]) {
-     for (let i = array.length - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-  }
-
-  getRandomPosts():void {
-    let postPool = this.arrayPost.length
-    let numeroPostEstratti:number = 4
-    for (let i=0 ; i < postPool; i++ ) {
-      this.arrayPool.push(i)
-    }
-
-    this.shuffleArray(this.arrayPool)
-
-    for (let j=0; j < numeroPostEstratti ; j++) {
-      let postEstratto = this.arrayPool.pop()
-      if(postEstratto) this.arrayEstrazione.push(this.arrayPost[postEstratto])
-    }
-    console.log(this.arrayEstrazione)
-  }
-
-  async getPosts():Promise<void>   {
-    let response = await fetch(this.urlJson)
-    let object = <iPostVessel> await response.json()
-
-    this.arrayPost = object.posts
-
-    this.getRandomPosts()
-  }
 }

@@ -273,20 +273,35 @@ export class PostServiceService {
     }
   }
 
-  //postFilter(tag:string, array:iPost[]) {
-  //}
+  //Metodi Home
 
-  // Metodi con fetch (ora inutilizzati)
   shuffleArray(array:any[]) {
     for (let i = array.length - 1; i > 0; i--) {
      let j = Math.floor(Math.random() * (i + 1));
      [array[i], array[j]] = [array[j], array[i]];
    }
- }
-
-  getFromJson():Promise<Response>{
-    return fetch(this.urlJson)
   }
+
+  getRandomPosts(indexArray:number[],postArray:iPost[],numberOfPosts:number):void {
+    let postPool = this.arrayPostJson.length
+    let numeroPostEstratti:number = numberOfPosts
+    indexArray = []
+    // Se lavoro con i numeri da 0 a 29 l'IF(postEstratto) non permette di visualizzare il post [0]
+    for (let i=1 ; i < postPool + 1; i++ ) {
+      indexArray.push(i)
+    }
+
+    this.shuffleArray(indexArray)
+
+    for (let j=0; j < numeroPostEstratti ; j++) {
+      let postEstratto = indexArray.pop()
+      //Necessità dell'if poichè TS verifica che postEstratto non sia di tipo undefined
+      if(postEstratto) postArray.push(this.arrayPostJson[postEstratto-1]) //Riporto gli indici da 1->30 a 0->29
+    }
+    console.log(postArray)
+  }
+
+  // Metodi filtro per post attivi e inattivi
 
   getActivePosts(array:iPost[]):iPost[] {
     return array.filter(post => post.active == true)
@@ -296,9 +311,18 @@ export class PostServiceService {
     return array.filter(post => post.active === false)
   }
 
+  // Metodo ricerca post per id
+
   getPostById(id:number, array:iPost[]){
     return array.find(p => p.id == id)
   }
+
+  // Metodo con fetch (INUTILIZZATO)
+
+  getFromJson():Promise<Response>{
+    return fetch(this.urlJson)
+  }
+
 }
 
 /* SHUFFLE FISHER-YATES FUNZIONA CORRETTAMENTE

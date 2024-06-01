@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
 })
 export class ActivePostsComponent {
 
-  everyPostArray:iPost[] = []
   activePostArray:iPost[] = []
 
   constructor(
@@ -17,15 +16,8 @@ export class ActivePostsComponent {
   ) {}
 
   ngOnInit() {
-
-    this.PostSvc.getFromJson()
-    .then(res => res.json())
-    .then(res => {
-      this.everyPostArray = res.posts
-    })
-    .then(() => console.log(this.everyPostArray))
-    .then(() => this.activePostArray = this.PostSvc.getActivePosts(this.everyPostArray))
-    .then(() => console.log('filtrati', this.activePostArray))
+    this.activePostArray = this.PostSvc.getActivePosts(this.PostSvc.arrayPostJson)
+    console.log('filtrati', this.activePostArray)
 
   }
 }

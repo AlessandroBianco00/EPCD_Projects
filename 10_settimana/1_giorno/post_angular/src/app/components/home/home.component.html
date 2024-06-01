@@ -1,18 +1,18 @@
 <main>
   <article class="text-bg-dark text-center p-5">
     <h1 class="text-bg-warning p-1">Post of the day!</h1>
-    <div class="conrainer">
+    <div class="container" *ngIf="dailyPost">
       <div class="row">
-        <div class="col" *ngIf="arrayPost[1]">
-          <h3>{{ arrayPost[1].title }}</h3>
-          <p>{{ arrayPost[1].body }}</p>
+        <div class="col" *ngFor="let post of dailyPost">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.body }}</p>
         </div>
       </div>
     </div>
   </article>
   <section class="container-fluid p-3 text-bg-secondary">
     <h2>Recommended posts</h2>
-    <div class="row g-2">
+    <div class="row g-2" *ngIf="arrayEstrazione">
       <div
         *ngFor="let post of arrayEstrazione"
         class="col-12 col-md-6 col-xl-3 text-bg-light"

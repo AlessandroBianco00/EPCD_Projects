@@ -20,26 +20,20 @@ export class PostDetailsComponent {
 
   ngOnInit() {
 
-    this.PostSvc.getFromJson()
-    .then(res => res.json())
-    .then(res => {
-      this.everyPostArray = res.posts
-    })
+    this.everyPostArray = this.PostSvc.arrayPostJson
     //Ricerca con id
-    .then(() => {
-      this.route.params.subscribe((params:any) => {
+    this.route.params.subscribe((params:any) => {
 
-        console.log(params);
+      console.log(params);
 
-        let postFound = this.PostSvc.getPostById(params.id, this.everyPostArray)
+      let postFound = this.PostSvc.getPostById(params.id, this.everyPostArray)
 
-        console.log(postFound);
+      console.log(postFound);
 
-
-        if(postFound){
-          this.currentPost = postFound
-        }
+      if(postFound){
+        this.currentPost = postFound
+      }
     })
-    })
-}
+
+  }
 }

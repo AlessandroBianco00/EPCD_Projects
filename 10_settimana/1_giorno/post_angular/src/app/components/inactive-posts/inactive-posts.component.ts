@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './inactive-posts.component.scss'
 })
 export class InactivePostsComponent {
-  everyPostArray:iPost[] = []
+
   inactivePostArray:iPost[] = []
 
   constructor(
@@ -17,15 +17,7 @@ export class InactivePostsComponent {
   ) {}
 
   ngOnInit() {
-
-    this.PostSvc.getFromJson()
-    .then(res => res.json())
-    .then(res => {
-      this.everyPostArray = res.posts
-    })
-    .then(() => console.log(this.everyPostArray))
-    .then(() => this.inactivePostArray = this.PostSvc.getInactivePosts(this.everyPostArray))
-    .then(() => console.log('filtrati', this.inactivePostArray))
-
+    this.inactivePostArray = this.PostSvc.getInactivePosts(this.PostSvc.arrayPostJson)
+    console.log('filtrati inattivi', this.inactivePostArray)
   }
 }

@@ -29,10 +29,11 @@ export class AllPostsComponent {
 
   getArrayJson():void {
     this.allPostArray = this.PostSvc.arrayPostJson
+    this.filter = 'all'
   }
 
   ngOnInit() {
-    this.allPostArray = this.PostSvc.arrayPostJson
+    this.getArrayJson()
 
     this.PostSvc.filterTags(this.tagsArray)
   }
