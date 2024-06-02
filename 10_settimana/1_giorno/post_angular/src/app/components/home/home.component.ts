@@ -13,7 +13,6 @@ export class HomeComponent {
   urlJson:string = '../../../assets/db.json'
 
   arrayPost:iPost[] = []
-  arrayIndici:number[] =[]
   dailyPost:iPost[] = []
   arrayEstrazione:iPost[] =[]
 
@@ -23,8 +22,7 @@ export class HomeComponent {
 
   ngOnInit() {
     this.arrayPost = this.PostSvc.arrayPostJson
-    this.PostSvc.getRandomPosts(this.arrayIndici, this.dailyPost, 1)
-    this.PostSvc.getRandomPosts(this.arrayIndici, this.arrayEstrazione, 4)
+    this.PostSvc.getRandomPosts( this.dailyPost, this.arrayEstrazione, 4)
   }
 
 }

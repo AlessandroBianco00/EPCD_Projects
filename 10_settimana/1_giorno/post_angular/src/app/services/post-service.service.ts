@@ -282,10 +282,9 @@ export class PostServiceService {
    }
   }
 
-  getRandomPosts(indexArray:number[],postArray:iPost[],numberOfPosts:number):void {
+  getRandomPosts(mainPost:iPost[], postArray:iPost[],numberOfPosts:number):void {
     let postPool = this.arrayPostJson.length
-    let numeroPostEstratti:number = numberOfPosts
-    indexArray = []
+    let indexArray = []
     // Se lavoro con i numeri da 0 a 29 l'IF(postEstratto) non permette di visualizzare il post [0]
     for (let i=1 ; i < postPool + 1; i++ ) {
       indexArray.push(i)
@@ -293,12 +292,14 @@ export class PostServiceService {
 
     this.shuffleArray(indexArray)
 
-    for (let j=0; j < numeroPostEstratti ; j++) {
+    for (let j=0; j < numberOfPosts + 1 ; j++) { //Estratto un numero in più che diventa il post principale della pagina
       let postEstratto = indexArray.pop()
+      if(j === 0) {
+        if(postEstratto) mainPost.push(this.arrayPostJson[postEstratto-1])
+      } else
       //Necessità dell'if poichè TS verifica che postEstratto non sia di tipo undefined
       if(postEstratto) postArray.push(this.arrayPostJson[postEstratto-1]) //Riporto gli indici da 1->30 a 0->29
     }
-    console.log(postArray)
   }
 
   // Metodi filtro per post attivi e inattivi
