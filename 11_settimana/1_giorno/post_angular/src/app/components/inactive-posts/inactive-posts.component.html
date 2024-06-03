@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row g-1" *ngIf="inactivePostArray[0]">
+    <div
+      class="col-12 border border-dark"
+      *ngFor="let post of inactivePostArray"
+    >
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.body }}</p>
+      <p>{{ post.active ? "Attivo" : "Inattivo" }}</p>
+      <a class="btn btn-primary" [routerLink]="['/post-details', post.id]"
+        >Dettaglio</a
+      >
+    </div>
+  </div>
+</div>
