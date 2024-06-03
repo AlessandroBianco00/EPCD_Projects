@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -20,7 +21,9 @@ const routes: Routes = [
   {
     path:'inactive-posts',
     loadChildren: () => import("./components/inactive-posts/inactive-posts.module").then(m => m.InactivePostsModule),
-    title:'Inactive-posts'
+    title:'Inactive-posts',
+    canActivate:[AuthGuard],
+    canActivateChild: [AuthGuard]
   },
   {
     path:'all-posts',

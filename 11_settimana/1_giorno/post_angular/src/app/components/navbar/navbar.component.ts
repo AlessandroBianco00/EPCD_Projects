@@ -13,12 +13,12 @@ export class NavbarComponent {
   constructor(private AuthSvc:AuthService) {}
 
   login(){
-    //this.AuthSvc.login()
+    this.AuthSvc.login()
     this.isLogged = true
   }
 
   logout() {
-    //this.AuthSvc.logout()
+    this.AuthSvc.logout()
     this.isLogged = false
 
   }

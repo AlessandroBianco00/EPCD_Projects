@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, GuardResult, MaybeAsync, RouterStateSnapshot } from '@angular/router';
+import { ActivatedRouteSnapshot, GuardResult, MaybeAsync, Router, RouterStateSnapshot } from '@angular/router';
 import { AuthService } from '../services/auth.service';
 
 @Injectable({
@@ -7,7 +7,10 @@ import { AuthService } from '../services/auth.service';
 })
 export class AuthGuard {
 
-  constructor(private AuthSvc:AuthService){}
+  constructor(
+    private AuthSvc:AuthService,
+    private router:Router
+  ){}
 
   canActivate(
     route: ActivatedRouteSnapshot,
