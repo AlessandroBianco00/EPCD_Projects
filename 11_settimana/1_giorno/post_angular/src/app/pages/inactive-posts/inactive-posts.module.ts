@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InactivePostsComponent } from './inactive-posts.component';
 import { InactivePostsRoutingModule } from './inactive-posts-routing.module';
+import { SharedModule } from '../../shared/shared.module';
 
 
 
@@ -11,7 +12,8 @@ import { InactivePostsRoutingModule } from './inactive-posts-routing.module';
   ],
   imports: [
     CommonModule,
-    InactivePostsRoutingModule
+    InactivePostsRoutingModule,
+    SharedModule
   ]
 })
 export class InactivePostsModule { }

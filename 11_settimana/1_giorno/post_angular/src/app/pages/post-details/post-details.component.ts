@@ -2,6 +2,8 @@ import { PostServiceService } from './../../services/post-service.service';
 import { iPost } from './../../Models/post';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+
 
 @Component({
   selector: 'app-post-details',
@@ -15,7 +17,8 @@ export class PostDetailsComponent {
 
   constructor(
     private route:ActivatedRoute,
-    private PostSvc:PostServiceService
+    private PostSvc:PostServiceService,
+    private location:Location
   ) {}
 
   ngOnInit() {
@@ -35,5 +38,9 @@ export class PostDetailsComponent {
       }
     })
 
+  }
+
+  goToPreviousPage() {
+    this.location.back();
   }
 }

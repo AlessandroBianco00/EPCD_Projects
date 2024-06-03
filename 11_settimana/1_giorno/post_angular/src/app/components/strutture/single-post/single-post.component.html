@@ -19,7 +19,13 @@
     <a class="btn btn-primary" [routerLink]="['/post-details', post.id]"
       >Dettaglio</a
     >
-    <button class="btn btn-warning" (click)="toggleForm()">Show Form</button>
+    <button
+      class="btn btn-warning"
+      *ngIf="router.url === '/all-posts'"
+      (click)="toggleForm()"
+    >
+      Show Form
+    </button>
   </div>
   <ng-content *ngIf="show"></ng-content>
 </div>

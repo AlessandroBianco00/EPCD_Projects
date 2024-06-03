@@ -10,29 +10,29 @@ const routes: Routes = [
   },
   {
     path:'home',
-    loadChildren: () => import("./components/home/home.module").then(m => m.HomeModule),//lazy load
+    loadChildren: () => import("./pages/home/home.module").then(m => m.HomeModule),//lazy load
     title:'Home'
   },
   {
     path:'active-posts',
-    loadChildren: () => import("./components/active-posts/active-posts.module").then(m => m.ActivePostsModule),
+    loadChildren: () => import("./pages/active-posts/active-posts.module").then(m => m.ActivePostsModule),
     title:'Active-posts'
   },
   {
     path:'inactive-posts',
-    loadChildren: () => import("./components/inactive-posts/inactive-posts.module").then(m => m.InactivePostsModule),
+    loadChildren: () => import("./pages/inactive-posts/inactive-posts.module").then(m => m.InactivePostsModule),
     title:'Inactive-posts',
     canActivate:[AuthGuard],
     canActivateChild: [AuthGuard]
   },
   {
     path:'all-posts',
-    loadChildren: () => import("./components/all-posts/all-posts.module").then(m => m.AllPostsModule),
+    loadChildren: () => import("./pages/all-posts/all-posts.module").then(m => m.AllPostsModule),
     title:'All-posts'
   },
   {
     path:'post-details/:id',
-    loadChildren: () => import("./components/post-details/post-details.module").then(m => m.PostDetailsModule),
+    loadChildren: () => import("./pages/post-details/post-details.module").then(m => m.PostDetailsModule),
     title:'Post detail'
   },
   /*{

@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row g-1" *ngIf="currentPost">
+    <div class="col-12">
+      <app-single-post [post]="currentPost"></app-single-post>
+      <a class="btn btn-warning mt-2" (click)="goToPreviousPage()"
+        >Torna indietro</a
+      >
+    </div>
+  </div>
+</div>

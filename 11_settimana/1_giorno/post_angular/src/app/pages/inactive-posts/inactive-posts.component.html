@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row g-1" *ngIf="inactivePostArray[0]">
+    <div
+      class="col-12 border border-dark px-0"
+      *ngFor="let post of inactivePostArray"
+    >
+      <app-single-post [post]="post"></app-single-post>
+    </div>
+  </div>
+</div>
