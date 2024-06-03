@@ -17,6 +17,7 @@ export class AuthGuard {
     state: RouterStateSnapshot): MaybeAsync<GuardResult> {
     return this.AuthSvc.isLoggedIn;
   }
+
   canActivateChild(
     childRoute: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): MaybeAsync<GuardResult> {
