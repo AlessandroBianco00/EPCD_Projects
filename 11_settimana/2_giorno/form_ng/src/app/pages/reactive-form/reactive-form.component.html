@@ -1,0 +1,82 @@
+<h1>Register Now</h1>
+<!-- Reactive form -->
+
+<form [formGroup]="form">
+  <div class="form-group">
+    <input
+      type="text"
+      formControlName="firstName"
+      class="form-control"
+      placeholder="Your first name"
+    />
+    <span *ngIf="isInvalidNTouched('firstName')">Inserisci un nome</span>
+  </div>
+
+  <div class="form-group">
+    <input
+      type="text"
+      formControlName="lastName"
+      class="form-control"
+      placeholder="Your last name"
+    />
+    <span *ngIf="isInvalidNTouched('lastName')">Inserisci un cognome</span>
+  </div>
+
+  <div class="form-group">
+    <input
+      type="password"
+      formControlName="password"
+      class="form-control"
+      placeholder="Your password"
+    />
+    <span *ngIf="isInvalidNTouched('password')">Inserisci una password</span>
+  </div>
+
+  <div class="form-group">
+    <input
+      type="password"
+      formControlName="confirmPassword"
+      class="form-control"
+      placeholder="Confirm your password"
+    />
+    <span *ngIf="isInvalidNTouched('confirmPassword')"
+      >Inserisci la password
+    </span>
+  </div>
+
+  <div class="form-group">
+    <select formControlName="gender" class="form-control">
+      <option value="">--Select gender--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <span *ngIf="isInvalidNTouched('gender')">Seleziona un'opzione </span>
+  </div>
+
+  <div class="form-group">
+    <input type="file" formControlName="propic" class="form-control" />
+    <span *ngIf="isInvalidNTouched('propic')">Carica un tua foto </span>
+  </div>
+
+  <div class="form-group">
+    <textarea
+      formControlName="biography"
+      class="form-control"
+      placeholder="Write a short bio"
+    ></textarea>
+    <span *ngIf="isInvalidNTouched('biography')">Carica un tua foto </span>
+  </div>
+
+  <div class="form-group">
+    <input
+      type="text"
+      formControlName="username"
+      class="form-control"
+      placeholder="Choose a username"
+    />
+    <span *ngIf="isInvalidNTouched('username')">Inserisci l'username</span>
+  </div>
+
+  <button (click)="invia()" class="btn btn-success">Invia</button>
+</form>

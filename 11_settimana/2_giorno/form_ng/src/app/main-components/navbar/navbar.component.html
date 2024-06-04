@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-md bg-complementary">
+  <div class="container-fluid">
+    <button
+      (click)="show = !show"
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{ show: show }">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            aria-current="page"
+            routerLink="/"
+            routerLinkActive="custom-active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Reactive form</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/template-driven"
+            routerLinkActive="custom-active"
+            >Template driven</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

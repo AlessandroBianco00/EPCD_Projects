@@ -1,0 +1,71 @@
+<h1>Register Now</h1>
+
+<form #form="ngForm" (ngSubmit)="submit(form)">
+  <input
+    type="text"
+    name="firstName"
+    ngModel
+    #firstName="ngModel"
+    class="form-control"
+    required
+    placeholder="Your first name"
+  />
+  <input
+    type="text"
+    name="lastName"
+    ngModel
+    #lastName="ngModel"
+    class="form-control"
+    required
+    placeholder="Your last name"
+  />
+  <input
+    type="password"
+    name="password"
+    ngModel
+    #password="ngModel"
+    class="form-control"
+    required
+    placeholder="Password"
+  />
+  <input
+    type="password"
+    name="confirmPassword"
+    ngModel
+    #confirmPassword="ngModel"
+    class="form-control"
+    required
+    placeholder="Confirm your password"
+  />
+  <select name="gender" ngModel class="form-control" required>
+    <option value="">--Select gender--</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select>
+  <input
+    type="file"
+    name="propic"
+    ngModel
+    #propic="ngModel"
+    class="form-control"
+  />
+  <textarea
+    name="biography"
+    ngModel
+    #biography="ngModel"
+    required
+    class="form-control"
+    placeholder="Write a short bio"
+  ></textarea>
+  <input
+    type="text"
+    name="username"
+    ngModel
+    #username="ngModel"
+    class="form-control"
+    required
+    placeholder="Username"
+  />
+  <button [disabled]="form.invalid" class="btn btn-success">Invia</button>
+</form>
