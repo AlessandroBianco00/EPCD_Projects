@@ -42,6 +42,7 @@
     <span *ngIf="isInvalidNTouched('confirmPassword')"
       >Inserisci la password
     </span>
+    <span *ngIf="passwordMatch(form)">Password di conferma diversa </span>
   </div>
 
   <div class="form-group">
