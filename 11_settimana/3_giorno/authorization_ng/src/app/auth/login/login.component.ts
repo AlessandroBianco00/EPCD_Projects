@@ -22,5 +22,8 @@ export class LoginComponent {
 
   login(){
     this.authSvc.login(this.authData)
+    .subscribe(()=>{
+      this.router.navigate(['/dashboard'])
+    })
   }
 }

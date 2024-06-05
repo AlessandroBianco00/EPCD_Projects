@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { JwtHelperService } from '@auth0/angular-jwt';
-import { BehaviorSubject, Observable, tap } from 'rxjs';
+import { BehaviorSubject, Observable, map, tap } from 'rxjs';
 import { iUser } from '../Models/users';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
@@ -12,16 +12,25 @@ import { iAuthData } from '../Models/auth-data';
 })
 export class AuthService {
 
-  jwtService:JwtHelperService = new JwtHelperService()
+  jwtHelper:JwtHelperService = new JwtHelperService()
 
   authSubject = new BehaviorSubject<null|iUser>(null);
 
+  syncIsLoggedIn:boolean = false;
+
   user$ = this.authSubject.asObservable()
+
+  isLoggedIn$ = this.user$.pipe(
+    map(user => !!user),
+    tap(user => this.syncIsLoggedIn = user)
+  )
 
   constructor(
     private http:HttpClient,
     private router:Router
-  ) { }
+  ) {
+    this.restoreUser()
+  }
 
   loginUrl = 'http://localhost:3000/login'
   registerUrl = 'http://localhost:3000/register'
@@ -51,15 +60,40 @@ export class AuthService {
 
   }
 
-  autoLogout() {
+  autoLogout():void{
+
+    const accessData = this.getAccessData()
+
+    if(!accessData) return
+
+    const expDate = this.jwtHelper.getTokenExpirationDate(accessData.accessToken) as Date
+
+    const expMs = expDate.getTime() - new Date().getTime()
+
+    setTimeout(this.logout,expMs)
 
   }
 
-  restoreUser() {
+  getAccessData():iAuthResponse|null{
 
+    const accessDataJson = localStorage.getItem('accessData')
+    if(!accessDataJson) return null
+
+    const accessData:iAuthResponse = JSON.parse(accessDataJson)
+
+    return accessData;
   }
 
-  getAccessData() {
+  restoreUser():void{
+
+    const accessData = this.getAccessData()
+
+    if(!accessData) return
+
+    if(this.jwtHelper.isTokenExpired(accessData.accessToken)) return
+
+    this.authSubject.next(accessData.user)
+    this.autoLogout()
 
   }
 }
