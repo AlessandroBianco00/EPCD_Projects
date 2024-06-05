@@ -32,8 +32,8 @@ export class AuthService {
     this.restoreUser()
   }
 
-  loginUrl = 'http://localhost:3000/login'
-  registerUrl = 'http://localhost:3000/register'
+  loginUrl:string = 'http://localhost:3000/login'
+  registerUrl:string = 'http://localhost:3000/register'
 
   login(authData:iAuthData):Observable<iAuthResponse>{
     return this.http.post<iAuthResponse>(this.loginUrl, authData)
