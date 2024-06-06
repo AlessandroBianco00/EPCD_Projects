@@ -35,6 +35,7 @@ const routes: Routes = [
     loadChildren: () => import("./pages/post-details/post-details.module").then(m => m.PostDetailsModule),
     title:'Post detail'
   },
+  { path: 'auth', loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule) },
   /*{
     path:'**',//pagina 404
     component: Page404Component

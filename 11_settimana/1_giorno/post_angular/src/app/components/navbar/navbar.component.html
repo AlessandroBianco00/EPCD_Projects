@@ -46,11 +46,10 @@
             >All posts</a
           >
         </li>
-        <li *ngIf="!isLogged">
-          <button class="btn btn-primary" (click)="login()">Log in</button>
-        </li>
-        <li *ngIf="isLogged">
-          <button class="btn btn-danger" (click)="logout()">Log out</button>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/auth" routerLinkActive="active"
+            >Sign in</a
+          >
         </li>
       </ul>
     </div>
