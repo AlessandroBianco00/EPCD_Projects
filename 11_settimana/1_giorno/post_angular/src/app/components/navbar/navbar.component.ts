@@ -12,8 +12,15 @@ export class NavbarComponent {
 
   constructor(private AuthSvc:AuthService) {}
 
-  ngOnInit() {
+  isLoggedIn = this.AuthSvc.syncIsLoggedIn
 
+  ngOnInit() {
+    this.AuthSvc.isLoggedIn$
+    .subscribe(isLoggedIn => this.isLoggedIn = isLoggedIn )
+  }
+
+  logout() {
+    this.AuthSvc.logout()
   }
 
 }

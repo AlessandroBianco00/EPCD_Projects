@@ -20,4 +20,10 @@ export class LoginComponent {
     private router:Router
   ){}
 
+  login(){
+    this.authSvc.login(this.authData)
+    .subscribe(()=>{
+      this.router.navigate(['/home'])
+    })
+  }
 }

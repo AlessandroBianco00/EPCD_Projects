@@ -28,7 +28,9 @@ const routes: Routes = [
   {
     path:'all-posts',
     loadChildren: () => import("./pages/all-posts/all-posts.module").then(m => m.AllPostsModule),
-    title:'All-posts'
+    title:'All-posts',
+    canActivate:[AuthGuard],
+    canActivateChild: [AuthGuard]
   },
   {
     path:'post-details/:id',

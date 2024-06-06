@@ -33,7 +33,7 @@
             >Active posts</a
           >
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="isLoggedIn">
           <a
             class="nav-link"
             routerLink="/inactive-posts"
@@ -41,15 +41,20 @@
             >Inactive posts</a
           >
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="isLoggedIn">
           <a class="nav-link" routerLink="/all-posts" routerLinkActive="active"
             >All posts</a
           >
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="!isLoggedIn">
           <a class="nav-link" routerLink="/auth" routerLinkActive="active"
             >Sign in</a
           >
+        </li>
+        <li *ngIf="isLoggedIn" class="nav-item">
+          <button (click)="logout()" class="btn btn-outline-danger">
+            Logout
+          </button>
         </li>
       </ul>
     </div>

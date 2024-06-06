@@ -9,13 +9,12 @@ export class AuthGuard {
 
   constructor(
     private AuthSvc:AuthService,
-    private router:Router
   ){}
 
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): MaybeAsync<GuardResult> {
-    return this.AuthSvc.isLoggedIn;
+    return this.AuthSvc.syncIsLoggedIn;
   }
 
   canActivateChild(
