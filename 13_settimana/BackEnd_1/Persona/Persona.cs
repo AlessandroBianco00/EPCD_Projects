@@ -19,11 +19,7 @@
             this.eta = eta;
         }
 
-        public string Nome 
-        { 
-            get { return nome; }
-            set { nome = value; }
-        }
+        public string Nome { get { return nome; }set { nome = value; }}
         
         public string Cognonome
         {
