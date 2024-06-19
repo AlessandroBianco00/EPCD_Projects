@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{28DCFAAA-F48E-4ED3-8CD4-8CBF3F5CFB7D}|Input_Exercise\\Input_Exercise.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\input_exercise\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28DCFAAA-F48E-4ED3-8CD4-8CBF3F5CFB7D}|Input_Exercise\\Input_Exercise.csproj|solutionrelative:input_exercise\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28DCFAAA-F48E-4ED3-8CD4-8CBF3F5CFB7D}|Input_Exercise\\Input_Exercise.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\input_exercise\\input_alg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28DCFAAA-F48E-4ED3-8CD4-8CBF3F5CFB7D}|Input_Exercise\\Input_Exercise.csproj|solutionrelative:input_exercise\\input_alg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F8F6224-0A32-4DBE-94C2-6798593C348C}|BankAccount\\BankAccount.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\bankaccount\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F8F6224-0A32-4DBE-94C2-6798593C348C}|BankAccount\\BankAccount.csproj|solutionrelative:bankaccount\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F8F6224-0A32-4DBE-94C2-6798593C348C}|BankAccount\\BankAccount.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\bankaccount\\bankclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F8F6224-0A32-4DBE-94C2-6798593C348C}|BankAccount\\BankAccount.csproj|solutionrelative:bankaccount\\bankclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F7B63DC2-DA74-426C-8135-98F3793A8CA5}|Persona\\Persona.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\persona\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7B63DC2-DA74-426C-8135-98F3793A8CA5}|Persona\\Persona.csproj|solutionrelative:persona\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B63DC2-DA74-426C-8135-98F3793A8CA5}|Persona\\Persona.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\persona\\mainpersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B63DC2-DA74-426C-8135-98F3793A8CA5}|Persona\\Persona.csproj|solutionrelative:persona\\mainpersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD65C5D3-B596-4894-AF6D-14229243BBB6}|BackEnd_1\\BackEnd_1.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\backend_1\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD65C5D3-B596-4894-AF6D-14229243BBB6}|BackEnd_1\\BackEnd_1.csproj|solutionrelative:backend_1\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD65C5D3-B596-4894-AF6D-14229243BBB6}|BackEnd_1\\BackEnd_1.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\backend_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD65C5D3-B596-4894-AF6D-14229243BBB6}|BackEnd_1\\BackEnd_1.csproj|solutionrelative:backend_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD65C5D3-B596-4894-AF6D-14229243BBB6}|BackEnd_1\\BackEnd_1.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\backend_1\\backend_1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CD65C5D3-B596-4894-AF6D-14229243BBB6}|BackEnd_1\\BackEnd_1.csproj|solutionrelative:backend_1\\backend_1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,64 +38,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainPersona.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Persona\\MainPersona.cs",
-              "RelativeDocumentMoniker": "Persona\\MainPersona.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Persona\\MainPersona.cs",
-              "RelativeToolTip": "Persona\\MainPersona.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T12:44:09.688Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Persona.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Persona\\Persona.cs",
               "RelativeDocumentMoniker": "Persona\\Persona.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Persona\\Persona.cs",
               "RelativeToolTip": "Persona\\Persona.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBUAAAAxAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T12:11:58.835Z",
+              "WhenOpened": "2024-06-19T12:25:34.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BankClass.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\BankAccount\\BankClass.cs",
+              "RelativeDocumentMoniker": "BankAccount\\BankClass.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\BankAccount\\BankClass.cs",
+              "RelativeToolTip": "BankAccount\\BankClass.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T12:17:59.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\BackEnd_1\\Main.cs",
-              "RelativeDocumentMoniker": "BackEnd_1\\Main.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\BackEnd_1\\Main.cs",
-              "RelativeToolTip": "BackEnd_1\\Main.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA1wCsAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T14:17:59.821Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BackEnd_1.csproj",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\BackEnd_1\\BackEnd_1.csproj",
-              "RelativeDocumentMoniker": "BackEnd_1\\BackEnd_1.csproj",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\BackEnd_1\\BackEnd_1.csproj",
-              "RelativeToolTip": "BackEnd_1\\BackEnd_1.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-17T13:57:45.151Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\BackEnd_1\\Program.cs",
-              "RelativeDocumentMoniker": "BackEnd_1\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\BackEnd_1\\Program.cs",
-              "RelativeToolTip": "BackEnd_1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGAAAAAuAAAA",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\BankAccount\\Program.cs",
+              "RelativeDocumentMoniker": "BankAccount\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\BankAccount\\Program.cs",
+              "RelativeToolTip": "BankAccount\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T12:18:45.419Z"
+              "WhenOpened": "2024-06-19T12:17:15.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Input_Alg.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Input_Exercise\\Input_Alg.cs",
+              "RelativeDocumentMoniker": "Input_Exercise\\Input_Alg.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Input_Exercise\\Input_Alg.cs",
+              "RelativeToolTip": "Input_Exercise\\Input_Alg.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T12:14:40.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Input_Exercise\\Program.cs",
+              "RelativeDocumentMoniker": "Input_Exercise\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Input_Exercise\\Program.cs",
+              "RelativeToolTip": "Input_Exercise\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T12:13:23.857Z",
+              "EditorCaption": ""
             }
           ]
         }

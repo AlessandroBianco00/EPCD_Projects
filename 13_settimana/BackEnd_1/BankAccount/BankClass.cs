@@ -17,9 +17,11 @@ namespace BankAccount
         public int Operazioni { get { return operazioni; } set { operazioni = value; } }
 
         public ContoCorrente(string owner, float saldo ) 
-        { 
+        {
             this.owner = owner;
             this.saldo = saldo;
+            operazioni = 0;
+            
         }
 
         public string Deposito(float amount)
