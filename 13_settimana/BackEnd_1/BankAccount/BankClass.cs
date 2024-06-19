@@ -37,4 +37,23 @@ namespace BankAccount
             return $"Hai prelevato {amount} $, il tuo saldo è {saldo} $";
         }
     }
+
+    class  AperturaConto { 
+        public void ApriConto()
+        {
+            Console.WriteLine("nuovo cliente");
+            string owner = Console.ReadLine();
+            Console.WriteLine("deposito iniziale");
+            int deposito = int.Parse(Console.ReadLine());
+            if (deposito < 1000)
+            {
+                Console.WriteLine("Versamento non sufficiente per aprire conto");
+            }
+            else 
+            {
+                ContoCorrente conto = new ContoCorrente(owner, deposito);
+                Console.WriteLine("Conto aperto correttamente");
+            }
+        }
+    }
 }

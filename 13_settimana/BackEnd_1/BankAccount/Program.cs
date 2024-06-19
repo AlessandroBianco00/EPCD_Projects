@@ -12,6 +12,9 @@
             Console.WriteLine(myBankAccount.Prelievo(3000));
             Console.WriteLine(myBankAccount.Saldo);
 
+            AperturaConto apri = new AperturaConto();
+            apri.ApriConto();
+
         }
     }
 }
