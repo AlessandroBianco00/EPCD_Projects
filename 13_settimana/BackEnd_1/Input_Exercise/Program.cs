@@ -6,11 +6,11 @@
         static void Main(string[] args)
         {
             Input_Alg prova = new Input_Alg();
-            prova.CercaNome("Filippo");
-            prova.CercaNome("Michele");
-            prova.CercaNome("riccardo");
+            Console.WriteLine("CercaNome");
+            prova.CercaNome();
 
             Console.WriteLine();
+            Console.WriteLine("Somma e Media");
             Alg3 alg = new Alg3();
             alg.InputArray(3);
         }

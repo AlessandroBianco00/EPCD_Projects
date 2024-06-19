@@ -8,15 +8,22 @@ namespace Input_Exercise
 {
     internal class Input_Alg
     {
-        private string[] nameArray = ["Giovanni", "Riccardo", "Filippo", "Federico", "Luca", "Giacomo"];
-        public void CercaNome(string name)
+        public void CercaNome()
         {
+            int arrayLenght = 4;
+            string[] nameArray = new string[arrayLenght];
             bool nameFound = false;
-            for (int i = 0; i < nameArray.Length; i++)
+            for (int i = 0; i < arrayLenght; i++)
             {
-                // if (nameArray[i].Equals(name)) { nameFound = true; } suggerimento tab
+                nameArray[i] = Console.ReadLine();
+            }
+            Console.WriteLine("Nome da Cercare");
+            string name = Console.ReadLine();
+            for (int i = 0; i < arrayLenght; i++)
+            {
                 if (nameArray[i].ToLower() == name.ToLower()) { nameFound = true; }
             }
+            
             if (!nameFound) { Console.WriteLine($"Il nome {name} non è stato trovato"); }
             else { Console.WriteLine($"Il nome {name} è presente nell'array"); }
         }
@@ -26,9 +33,12 @@ namespace Input_Exercise
     {
         public int InputArray(int len)
         {
+            Console.WriteLine("Dimensione Array:");
+            len = int.Parse(Console.ReadLine());
             int[] numberArray = new int[len];
             int media = 0;
             int sommaTotale = 0;
+            Console.WriteLine("Elementi array:");
             for (int i = 0; i < len; i++)
             {
                 numberArray[i] = int.Parse(Console.ReadLine());

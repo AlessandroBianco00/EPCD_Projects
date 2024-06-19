@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28DCFAAA-F48E-4ED3-8CD4-8CBF3F5CFB7D}|Input_Exercise\\Input_Exercise.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\input_exercise\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28DCFAAA-F48E-4ED3-8CD4-8CBF3F5CFB7D}|Input_Exercise\\Input_Exercise.csproj|solutionrelative:input_exercise\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28DCFAAA-F48E-4ED3-8CD4-8CBF3F5CFB7D}|Input_Exercise\\Input_Exercise.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\input_exercise\\input_alg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28DCFAAA-F48E-4ED3-8CD4-8CBF3F5CFB7D}|Input_Exercise\\Input_Exercise.csproj|solutionrelative:input_exercise\\input_alg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28DCFAAA-F48E-4ED3-8CD4-8CBF3F5CFB7D}|Input_Exercise\\Input_Exercise.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\input_exercise\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28DCFAAA-F48E-4ED3-8CD4-8CBF3F5CFB7D}|Input_Exercise\\Input_Exercise.csproj|solutionrelative:input_exercise\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F8F6224-0A32-4DBE-94C2-6798593C348C}|BankAccount\\BankAccount.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\bankaccount\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -77,26 +77,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Input_Alg.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Input_Exercise\\Input_Alg.cs",
               "RelativeDocumentMoniker": "Input_Exercise\\Input_Alg.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Input_Exercise\\Input_Alg.cs",
               "RelativeToolTip": "Input_Exercise\\Input_Alg.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCUAAAAeAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwDAAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T12:14:40.67Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Input_Exercise\\Program.cs",
               "RelativeDocumentMoniker": "Input_Exercise\\Program.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Input_Exercise\\Program.cs",
               "RelativeToolTip": "Input_Exercise\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T12:13:23.857Z",
               "EditorCaption": ""
