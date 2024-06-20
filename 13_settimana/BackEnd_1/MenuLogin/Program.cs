@@ -6,7 +6,6 @@
         {
             static void Main(string[] args)
             {
-                Program p = new Program();
                 while (true)
                 {
                     Console.Clear();
@@ -23,10 +22,10 @@
                     switch (choice)
                     {
                         case "1":
-                            p.Login();
+                            Login();
                             break;
                         case "2":
-                            p.Logout();
+                            Logout();
                             break;
                         case "3":
                             VerificaOraEDataDiLogin();
@@ -44,7 +43,7 @@
                 }
             }
 
-            void Login()
+            static void Login()
             {
                 Console.Clear();
                 Console.WriteLine("===== Login =====");
@@ -68,7 +67,7 @@
                 Console.ReadKey();
             }
 
-            void Logout()
+            static void Logout()
             {
                 Console.Clear();
                 if (Utente.Logout())
