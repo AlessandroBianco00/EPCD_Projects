@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{940A2099-345A-4BB8-B970-E82FF5DFBD90}|MenuLogin\\MenuLogin.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\menulogin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{940A2099-345A-4BB8-B970-E82FF5DFBD90}|MenuLogin\\MenuLogin.csproj|solutionrelative:menulogin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F8F6224-0A32-4DBE-94C2-6798593C348C}|BankAccount\\BankAccount.csproj|c:\\users\\user\\desktop\\ale_informatica\\github\\epcd_projects\\13_settimana\\backend_1\\bankaccount\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F8F6224-0A32-4DBE-94C2-6798593C348C}|BankAccount\\BankAccount.csproj|solutionrelative:bankaccount\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\MenuLogin\\Program.cs",
+              "RelativeDocumentMoniker": "MenuLogin\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\MenuLogin\\Program.cs",
+              "RelativeToolTip": "MenuLogin\\Program.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwKYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T12:07:09.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Persona.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Persona\\Persona.cs",
               "RelativeDocumentMoniker": "Persona\\Persona.cs",
@@ -50,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BankClass.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\BankAccount\\BankClass.cs",
               "RelativeDocumentMoniker": "BankAccount\\BankClass.cs",
@@ -58,12 +75,11 @@
               "RelativeToolTip": "BankAccount\\BankClass.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAIwC0AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:17:59.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T12:17:59.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\BankAccount\\Program.cs",
               "RelativeDocumentMoniker": "BankAccount\\Program.cs",
@@ -76,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Input_Alg.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Input_Exercise\\Input_Alg.cs",
               "RelativeDocumentMoniker": "Input_Exercise\\Input_Alg.cs",
@@ -84,12 +100,11 @@
               "RelativeToolTip": "Input_Exercise\\Input_Alg.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:14:40.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T12:14:40.67Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\Input_Exercise\\Program.cs",
               "RelativeDocumentMoniker": "Input_Exercise\\Program.cs",

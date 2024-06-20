@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackEnd_1", "BackEnd_1\Back
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persona", "Persona\Persona.csproj", "{F7B63DC2-DA74-426C-8135-98F3793A8CA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Input_Exercise", "Input_Exercise\Input_Exercise.csproj", "{28DCFAAA-F48E-4ED3-8CD4-8CBF3F5CFB7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Input_Exercise", "Input_Exercise\Input_Exercise.csproj", "{28DCFAAA-F48E-4ED3-8CD4-8CBF3F5CFB7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount", "BankAccount\BankAccount.csproj", "{9F8F6224-0A32-4DBE-94C2-6798593C348C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccount", "BankAccount\BankAccount.csproj", "{9F8F6224-0A32-4DBE-94C2-6798593C348C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuLogin", "MenuLogin\MenuLogin.csproj", "{940A2099-345A-4BB8-B970-E82FF5DFBD90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9F8F6224-0A32-4DBE-94C2-6798593C348C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F8F6224-0A32-4DBE-94C2-6798593C348C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F8F6224-0A32-4DBE-94C2-6798593C348C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{940A2099-345A-4BB8-B970-E82FF5DFBD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{940A2099-345A-4BB8-B970-E82FF5DFBD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{940A2099-345A-4BB8-B970-E82FF5DFBD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{940A2099-345A-4BB8-B970-E82FF5DFBD90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
