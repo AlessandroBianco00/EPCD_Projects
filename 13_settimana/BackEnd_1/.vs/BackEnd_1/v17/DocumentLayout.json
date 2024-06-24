@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "MenuLogin\\Program.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Ale_Informatica\\Github\\EPCD_Projects\\13_settimana\\BackEnd_1\\MenuLogin\\Program.cs",
               "RelativeToolTip": "MenuLogin\\Program.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAIwCoAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-20T12:07:09.197Z",
               "EditorCaption": ""
@@ -63,8 +63,7 @@
               "RelativeToolTip": "Persona\\Persona.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:25:34.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T12:25:34.596Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "BankAccount\\BankClass.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:17:59.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T12:17:59.154Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "BankAccount\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:17:15.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T12:17:15.497Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "Input_Exercise\\Input_Alg.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAgwCQAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:14:40.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T12:14:40.67Z"
             },
             {
               "$type": "Document",
@@ -115,8 +111,7 @@
               "RelativeToolTip": "Input_Exercise\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:13:23.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T12:13:23.857Z"
             }
           ]
         }

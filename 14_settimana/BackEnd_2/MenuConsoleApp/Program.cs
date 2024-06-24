@@ -9,8 +9,8 @@
 
         class Product
         {
-            public string productName { get; set; }
-            public float productPrice { get; set; }
+            public string ProductName { get; set; }
+            public float ProductPrice { get; set; }
 
         }
 
