@@ -1,4 +1,4 @@
-﻿namespace MenuConsoleApp
+﻿namespace MenuAlternative
 {
     internal class Program
     {
@@ -43,63 +43,63 @@
                 {
                     Console.WriteLine(ex);
                 }
-                try
+                if (ordine == 11) PayAndLeave(ordersList);
+                else
                 {
-                    AddToCart(ordine, ordersList);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex);
+                    try
+                    {
+
+                        ordersList.Add(GetItem(ordine));
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                    }
                 }
             }
         }
 
-        static void AddToCart(int order, List<Product> ordersList)
+        static Product GetItem(int order)
         {
             Product[] menu = { new Product { productName = "Coca Cola 150 ml", productPrice = 2.50f }, new Product { productName = "Insalata di pollo", productPrice = 5.20f }, new Product { productName = "Pizza Margherita", productPrice = 10.00f }, new Product { productName = "Pizza 4 Formaggi", productPrice = 12.50f }, new Product { productName = "Pz patatine fritte", productPrice = 3.50f }, new Product { productName = "Insalata di riso", productPrice = 8.00f }, new Product { productName = "Frutta di stagione", productPrice = 5.00f }, new Product { productName = "Pizza fritta", productPrice = 5.00f }, new Product { productName = "Piadina vegetariana", productPrice = 6.00f }, new Product { productName = "Panino Hamburger", productPrice = 7.90f } };
 
             switch (order)
             {
                 case 1:
-                    ordersList.Add(menu[0]);
+                    return menu[0];
                     break;
                 case 2:
-                    ordersList.Add(menu[1]);
+                    return menu[1];
                     break;
                 case 3:
-                    ordersList.Add(menu[2]);
+                    return menu[2];
                     break;
                 case 4:
-                    ordersList.Add(menu[3]);
+                    return menu[3];
                     break;
                 case 5:
-                    ordersList.Add(menu[4]);
+                    return menu[4];
                     break;
                 case 6:
-                    ordersList.Add(menu[5]);
+                    return menu[5];
                     break;
                 case 7:
-                    ordersList.Add(menu[6]);
+                    return menu[6];
                     break;
                 case 8:
-                    ordersList.Add(menu[7]);
+                    return menu[7];
                     break;
                 case 9:
-                    ordersList.Add(menu[8]);
+                    return menu[8];
                     break;
                 case 10:
-                    ordersList.Add(menu[9]);
+                    return menu[9];
                     break;
-                case 11:
-                    PayAndLeave(ordersList);
+                default:
+                    return null;
                     break;
-                /*default:
-                    Console.WriteLine("Scelta non valida. Premere un tasto per continuare...");
-                    Console.ReadKey();
-                    break;*/
             }
         }
-
         static void PayAndLeave(List<Product> ordersList)
         {
             Console.WriteLine("Recap ordine");
@@ -111,7 +111,7 @@
             }
             Console.WriteLine("Coperto , 3,00$");
             Console.WriteLine("Totale :");
-            Console.WriteLine("{0}", totale);
+            Console.WriteLine("{0} $", totale);
             ordersList.Clear();
             Console.ReadLine();
         }
