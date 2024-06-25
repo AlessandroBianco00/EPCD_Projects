@@ -1,0 +1,39 @@
+﻿@using CVConsoleApp;
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model CurriculumVitae
+
+<div class="text-center">
+    <h1 class="display-4">CV @Model.PersonalInformations.FirstName @Model.PersonalInformations.LastName</h1>
+</div>
+<div>
+    <p><b>Info Personali</b></p>
+    <p>Nome: @Model.PersonalInformations.FirstName</p>
+    <p>Cognome: @Model.PersonalInformations.LastName</p>
+    <p>Telefono: @Model.PersonalInformations.PhoneNumber</p>
+    <p>Email: @Model.PersonalInformations.Email</p>
+    <br />
+    <p><b>Studi</b></p>
+    @foreach (var studio in Model.Studies)
+    {
+        <p>Istituto:: @studio.Institute</p>
+        <p>Qualifica: @studio.Title</p>
+        <p>Dal @studio.StartingDate al @studio.EndingDate</p>
+    }
+    <br />
+    <p><b>Impiego</b></p>
+    <p>Presso: @Model.CurrentJob.Company</p>
+    <p>Tipo di lavoro: @Model.CurrentJob.JobTitle</p>
+    <p>Compito: @Model.CurrentJob.Duties</p>
+    <p>Dal @Model.CurrentJob.StartDate al  @Model.CurrentJob.EndDate</p>
+    <br />
+    <p><b>Esperienze Lavorativ</b></p>
+    @foreach (var wE in Model.WorkExperience )
+    {
+        <p>Presso: @wE.Company</p>
+        <p>Tipo di lavoro: @wE.JobTitle</p>
+        <p>Compito: @wE.Duties</p>
+        <p>Dal @wE.StartDate al @wE.EndDate</p>
+    }
+</div>

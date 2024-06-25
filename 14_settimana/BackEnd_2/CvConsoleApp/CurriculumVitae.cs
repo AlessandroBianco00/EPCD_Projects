@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CVConsoleApp
 {
-    internal class CurriculumVitae
+    public class CurriculumVitae
     {
         public PersonalInformations PersonalInformations { get; set; }
         public List<Studies> Studies { get; set; }
@@ -22,7 +22,7 @@ namespace CVConsoleApp
         }
     }
 
-    class PersonalInformations
+    public class PersonalInformations
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -38,7 +38,7 @@ namespace CVConsoleApp
         }
     }
 
-    class Studies
+    public class Studies
     {
         public string Title { get; set; }
         public string Institute { get; set; }
@@ -54,7 +54,7 @@ namespace CVConsoleApp
         }
     }
 
-    class WorkExperience
+    public class WorkExperience
     {
         public string Company { get; set; }
         public string JobTitle { get; set; }
