@@ -30,11 +30,12 @@ select City, COUNT(*) as TotalCustomersBYCity from Customers group by City
 
 -- 8)
 
-select OrderID, (UnitPrice * Quantity) as TotalPrice from [Order Details]
+select OrderID, SUM(UnitPrice * Quantity) as TotalPrice from [Order Details] group by OrderID
+-- select OrderID, (UnitPrice * Quantity) as TotalPrice from [Order Details] -- mostro UnitPrice * Quantity per ogni oggetto dell'ordine
 
 -- 9)
 
-select OrderID, (UnitPrice * Quantity) as TotalPrice from [Order Details] where OrderID = 10248
+select OrderID, SUM(UnitPrice * Quantity) as TotalPrice from [Order Details] where OrderID = 10248 group by OrderID
 
 -- 10)
 
