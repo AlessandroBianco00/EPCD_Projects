@@ -18,7 +18,12 @@ namespace ImpiegatiWebApp.Controllers
 
         public IActionResult Index()
         {
-            return View(_impiegatoService.GetEmployees().OrderByDescending(a => a.LastName));
+            return View(_impiegatoService.GetEmployees().OrderByDescending(a => a.Id));
+        }
+
+        public IActionResult DetailEmployee(int id)
+        {
+            return View(_impiegatoService.GetEmployee(id));
         }
 
         public IActionResult Privacy()

@@ -1,0 +1,20 @@
+﻿@model Impiegato
+
+@{
+    ViewData["Title"] = "DetailEmployee";
+}
+
+<h1>Dettaglio impiegato @Model.LastName @Model.FirstName</h1>
+
+<table class=" offset-1 col-10 table table-borderless">
+        <tr>
+            <td>@Model.FirstName</td>
+            <td>@Model.LastName</td>
+            <td>@Model.Id</td>
+            <td>@Model.Age</td>
+            <td>@Model.CF</td>
+            <td>@Model.MonthlySalary &euro;</td>
+            <td>@Model.FiscalDeduction</td>
+            <td>@Model.JobId</td>
+        </tr>
+</table>

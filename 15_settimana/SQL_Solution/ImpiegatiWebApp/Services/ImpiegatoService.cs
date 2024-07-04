@@ -19,8 +19,8 @@ namespace ImpiegatiWebApp.Services
         {
             return new Impiegato
             {
-                FirstName = reader.GetString(1),
-                LastName = reader.GetString(2),
+                FirstName = reader.GetString(2),
+                LastName = reader.GetString(1),
                 Id = reader.GetInt32(0),
                 CF = reader.GetString(3),
                 Age = reader.GetInt32(4),
