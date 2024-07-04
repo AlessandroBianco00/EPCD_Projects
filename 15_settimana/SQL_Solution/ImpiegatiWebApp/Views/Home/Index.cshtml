@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Impiegato>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Lista Impiegato Pincopallino S.p.a</h1>
+</div>
+
+    <div class="row">
+        <div class="col">
+            <a asp-action="Privacy" class="btn btn-primary">Aggiungi dipendente (non funzionante)</a>
+        </div>
+    </div>
+    @if (Model.Any())
+    {
+        <div class="row">
+            <table class=" offset-1 col-10 table table-borderless">
+                @foreach (var impiegato in Model)
+                {
+                    <tr>
+                        <td>@impiegato.FirstName</td>
+                        <td>@impiegato.LastName</td>
+                        <td>@impiegato.Id</td>
+                        <td>@impiegato.Age</td>
+                        <td>@impiegato.CF</td>
+                        <td>@impiegato.MonthlySalary &euro;</td>
+                        <td>@impiegato.FiscalDeduction</td>
+                        <td>@impiegato.JobId</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="row mt-2">
+            <div class="col alert alert-warning">Non ci sono impiegati assunti</div>
+        </div>
+    }
