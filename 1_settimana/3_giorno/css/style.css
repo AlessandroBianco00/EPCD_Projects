@@ -1,75 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 
-body{
-    font-family: "EB Garamond", serif;
+body {
+  font-family: "EB Garamond", serif;
 }
 
 /***********header**********/
 
-header{
-    text-align: center;
-    margin: 0;
+header {
+  text-align: center;
+  margin: 0;
 }
 
-.h-content{
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+.h-content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
-header h6{
-    border-top: 1px solid darkorange;
-    padding: 1em;
-    color: darkcyan;
-    background-color: #ffdcca;
+header h6 {
+  border-top: 1px solid darkorange;
+  padding: 1em;
+  color: darkcyan;
+  background-color: #ffdcca;
 }
 
 /***********main**********/
 
-main, footer{
-    margin: 0 30vw;
+main,
+footer {
+  margin: 0 30vw;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 
-main img{
-    width: 40vw;
+main img {
+  width: 40vw;
 }
 
-#photographer{
-    color: gray;
-    text-align: center;
+#photographer {
+  color: gray;
+  text-align: center;
 }
 
 /***********nav**********/
 
-nav{
-    padding-left: 1vw;
-    border-left: 1px solid darkorange;
+nav {
+  padding-left: 1vw;
+  border-left: 1px solid darkorange;
 }
 
-nav h5{
-    color: brown;
-    margin-bottom: 0;
+nav h5 {
+  color: brown;
+  margin-bottom: 0;
 }
 
 /*********div liste*********/
 
-.ingredienti li{
-    padding-bottom: 0.2em;
+.ingredienti li {
+  padding-bottom: 0.2em;
 }
 
-main h3{
-    font-weight: 500;
-    border-bottom: 1px solid darkcyan;
-    padding-bottom: 1vh;
+main h3 {
+  font-weight: 500;
+  border-bottom: 1px solid darkcyan;
+  padding-bottom: 1vh;
 }
 
-dt span{
-    font-weight: bold;
+dt span {
+  font-weight: bold;
 }
-dd{
-    margin: 0 1vw;
+dd {
+  margin: 0 1vw;
 }
